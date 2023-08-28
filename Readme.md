@@ -1,46 +1,19 @@
-Fase 1: Configuración del Proyecto
+Código de Conducta de Colaboradores
 
-Crear repositorio en GitHub.
-Clonar repositorio en máquinas locales de Juan y David.
-Configurar tablero en GitHub Projects.
-Fase 2: Desarrollo del Frontend (Juan David S)
+En nuestro proyecto de desarrollo de la aplicación web, nos comprometemos a mantener un ambiente de colaboración positivo y respetuoso. Como colaboradores, aceptamos y nos comprometemos a seguir este código de conducta en todas nuestras interacciones y contribuciones.
 
-Funcionalidad: Registro e Inicio de Sesión de Usuario.
+Respeto Mutuo: Valoramos y respetamos las opiniones y contribuciones de todos los miembros del equipo, independientemente de su nivel de experiencia. Abstenerse de comentarios o comportamientos que puedan ser perjudiciales, discriminatorios o despectivos.
 
-Crear formularios de registro e inicio de sesión.
-Implementar lógica de autenticación en JavaScript.
-Funcionalidad: Listado de Productos.
+Comunicación Constructiva: Promovemos una comunicación abierta y constructiva. Expresar desacuerdos u opiniones divergentes se debe hacer de manera respetuosa y fundamentada, buscando siempre el entendimiento mutuo.
 
-Diseñar página principal para mostrar productos.
-Utilizar TypeScript para manejar carga y visualización de productos.
-Funcionalidad: Detalles del Producto.
+Colaboración y Equipo: Reconocemos que estamos trabajando juntos hacia un objetivo común. Fomentamos la colaboración y compartimos conocimientos para lograr el éxito del proyecto.
 
-Crear página de detalles del producto.
-Mostrar información completa del producto y opciones de oferta.
-Fase 3: Desarrollo (Juan David R)
+Diversidad e Inclusión: Apreciamos la diversidad de perspectivas y experiencias. No toleramos ninguna forma de discriminación o exclusión basada en la raza, género, orientación sexual, religión, discapacidad o cualquier otro factor.
 
-Funcionalidad: Gestión de Usuarios.
+Responsabilidad Personal: Asumimos la responsabilidad de nuestras acciones y contribuciones. Mantenemos un alto estándar de calidad en el código, la documentación y la comunicación.
 
-Configurar servidor Node.js para manejar rutas de usuario.
-Utilizar TypeScript para definir estructuras de datos y rutas.
-Funcionalidad: Gestión de Productos.
+Resolver Conflictos: En caso de conflictos, nos esforzamos por resolverlos de manera pacífica y constructiva. Si es necesario, podemos buscar mediación de un tercero neutral.
 
-Implementar rutas para agregar, actualizar y eliminar productos.
-Utilizar base de datos simple (Firebase) para almacenar datos.
-Funcionalidad: Sistema de Ofertas.
+Feedback Constructivo: Apreciamos el feedback constructivo y lo usamos como una oportunidad para aprender y mejorar. Damos feedback de manera respetuosa y específica.
 
-Implementar rutas para manejar ofertas.
-Actualizar datos de ofertas en la base de datos.
-Fase 4: Integración y Colaboración (Ambos)
-
-Trabajar en ramas de características separadas.
-Realizar commits regulares con mensajes descriptivos en inglés.
-Realizar pull y merge de los cambios del otro miembro.
-Fase 5: Pruebas y Depuración (Ambos)
-
-Realizar pruebas locales para verificar funcionalidades.
-Solucionar errores y problemas identificados.
-Fase 6: Implementación y Despliegue (Ambos)
-
-Implementar en GitHub Pages.
-Verificar que todas las funcionalidades funcionen correctamente en producción.
+Cumplimiento del Código: Cada miembro del equipo se compromete a respetar este código de conducta.
