@@ -1,0 +1,36 @@
+#navSearchBar {
+    width: 500px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+
+    background-color: #5C5470;
+    border: 1px solid #352F44;
+    border-radius: 40px;
+}
+
+#navSearchLogo {
+    height: 40px;
+    margin: 0 0 0 5px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    outline: nones;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 2px;
+    color: #e3dfdb;
+    margin: 0 0 0 4px;
+}
+
+input::placeholder {
+    color: #c4bbd8;
+    font-size: 14px;
+}
+
+input:focus {
+    outline:none;
+}

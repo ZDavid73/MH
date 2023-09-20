@@ -1,0 +1,26 @@
+#navBar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: #FAF0E6;
+}
+
+#logoNav {
+    height: 50px;
+    margin: 0 20px 0 10px;
+}
+
+nav-searchbar {
+    margin-right: 18%;
+}
+
+nav-iconbutton {
+    margin: 0 10px 0 0;
+}
+
+.horizontalSpace {
+    width: 100%;
+}
