@@ -8,7 +8,7 @@ class component extends HTMLElement {
     }
     
     static get observedAttributes() {
-        const properties: Record<componentProperties,null> = {
+        const properties: Record<componentProperties, null> = {
             icon: null,
         }
         return Object.keys(properties); 

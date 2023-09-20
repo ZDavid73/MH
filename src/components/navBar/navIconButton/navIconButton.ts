@@ -47,7 +47,6 @@ class NavIconButton extends HTMLElement {
 
         this.shadowRoot?.appendChild(link)
         this.shadowRoot?.appendChild(iconContainer)
-        console.log(iconContainer)
     }
 }
 

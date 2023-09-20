@@ -1,4 +1,5 @@
 import "./components/navBar/navBar"
+import "./components/categoriesSection/categoriesSection"
 
 class AppContainer extends HTMLElement {
     constructor() {
@@ -17,9 +18,11 @@ class AppContainer extends HTMLElement {
             link.setAttribute("href", "/src/appContainer.css")
 
             const navBar = this.ownerDocument.createElement("nav-bar")
+            const categoriesSection = this.ownerDocument.createElement("categories-section")
 
             this.shadowRoot.appendChild(link)
             this.shadowRoot.appendChild(navBar)
+            this.shadowRoot.appendChild(categoriesSection)
         }
        
     }
