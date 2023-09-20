@@ -37,6 +37,13 @@ class component extends HTMLElement {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
         link.setAttribute("href", "")
+        //Creation of father
+
+        //Creation of childs
+
+        //Append childs of cardContainer
+
+        //Append childs of this.shadowRoot
     }
 }
 
