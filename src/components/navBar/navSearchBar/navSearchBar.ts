@@ -1,3 +1,9 @@
+const queryString = window.location.search
+console.log(queryString)
+
+const params = new URLSearchParams(queryString)
+console.log(params.get("search"))
+
 class NavSearchBar extends HTMLElement {
     constructor() {
         super()
@@ -5,7 +11,15 @@ class NavSearchBar extends HTMLElement {
     }
 
     connectedCallback() {
+        this.mount()
+    }
+
+    mount() {
         this.render()
+        const searchBar = this.shadowRoot?.getElementById("navSearchBar")
+        searchBar?.addEventListener("click", () => {
+            window.location.href = "/src/pages/search?search=prueba"
+        })
     }
 
     render() {

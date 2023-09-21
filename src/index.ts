@@ -2,6 +2,7 @@ import "./components/navBar/navBar"
 import "./components/categoriesSection/categoriesSection"
 import "./components/advertisingSection/advertisingSection"
 import "./components/recommendedSection/recommendedSection"
+import "./components/searchPage/searchPage"
 
 class AppContainer extends HTMLElement {
     constructor() {

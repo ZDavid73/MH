@@ -19,7 +19,7 @@ class component extends HTMLElement {
         this.attachShadow({mode: "open"})
     }
 
-    attributeChangedCallback(propName: string, oldValue: string, newValue: string) {
+    attributeChangedCallback(propName: componentProperties, oldValue: string, newValue: string) {
         switch (propName) {
             case componentProperties.icon:
                 this.properties.icon = newValue
@@ -41,9 +41,9 @@ class component extends HTMLElement {
 
         //Creation of childs
 
-        //Append childs of cardContainer
+        //Adding childs of 
 
-        //Append childs of this.shadowRoot
+        //Adding childs of this.shadowRoot
         this.shadowRoot?.appendChild(link)
     }
 }

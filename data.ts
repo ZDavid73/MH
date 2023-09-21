@@ -24,5 +24,8 @@ export const dataGeneral = {
             price: "Cop $23500",
             description: "Set of 2 ceramics plates"
         }
-    ]
+    ],
+    search: {
+        
+    }
 }
