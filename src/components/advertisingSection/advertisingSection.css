@@ -1,0 +1,17 @@
+#advertisingSectionContainer {
+    width: 100%;
+    margin: 30px 25px 0 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+#advertisingSectionContainer::-webkit-scrollbar {
+    display: none;
+  }
+
+advertising_section-ad {
+    margin: 0 30px 0 0;
+}

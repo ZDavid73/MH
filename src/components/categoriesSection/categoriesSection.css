@@ -1,0 +1,21 @@
+#categoriesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 0 30px;
+}
+
+H2 {
+    color: #FAF0E6;
+    font-size: 20px;
+}
+
+.cardsContainer {
+    width: 100%;
+    display: flex;
+
+}
+
+categories_section-cards {
+    margin: 0 20px 0 0;
+}

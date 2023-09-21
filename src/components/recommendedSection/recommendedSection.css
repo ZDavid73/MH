@@ -1,0 +1,18 @@
+#recommendedContainer {
+    width: 100%;
+    margin: 30px 25px 0 25px;
+    border: 1px solid white;
+}
+
+H2 {
+    color: #FAF0E6;
+    font-size: 20px;
+}
+
+.recommendedCardsContainer{
+    display: flex;
+}
+
+recommended_section-card {
+    margin: 0 20px 0 0;
+}

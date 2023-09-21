@@ -1,0 +1,11 @@
+@font-face {
+    font-family: REM;
+    src: url(/src/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0;
+    background-color: #352F44;
+    font-family: REM;
+    overflow-x: hidden;
+}

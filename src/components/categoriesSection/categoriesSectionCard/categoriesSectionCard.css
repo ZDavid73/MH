@@ -1,0 +1,26 @@
+.categoriesCardContainer {
+    width: 150px;
+    height: 200px;
+    border-radius: 6px;
+    background-color: #FAF0E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 6px 2px 0 2px;
+}
+
+.cardImage {
+    width: 94%;
+    border-radius: 10px;
+}
+
+.categoriesCardText {
+    margin: 15px 0 0 0;
+    color: #5C5470;
+    font-family: REM;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
