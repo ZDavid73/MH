@@ -8,4 +8,9 @@ body {
     background-color: #352F44;
     font-family: REM;
     overflow-x: hidden;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }

@@ -1,0 +1,62 @@
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.cardResultCotainer {
+    min-height: 180px;
+    width: 100%;
+    background-color: #FAF0E6;
+    display: flex;
+
+}
+.productImgContainer {
+    height: 180px;
+    width: 180px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.productImgContainer img {
+    object-fit: cover;
+    width: 100%;
+}
+
+.productInfoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 75%;
+}
+
+.productInfoContainer h2 {
+    color: #352F44;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+}
+
+.productInfoContainer h3 {
+    color: #5C5470;
+    font-family: REM;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+}
+
+.productInfoContainer p {
+    color: #5C5470;
+    font-family: REM;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: fit-content;
+}
