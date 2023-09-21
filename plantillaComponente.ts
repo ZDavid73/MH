@@ -44,6 +44,7 @@ class component extends HTMLElement {
         //Append childs of cardContainer
 
         //Append childs of this.shadowRoot
+        this.shadowRoot?.appendChild(link)
     }
 }
 
