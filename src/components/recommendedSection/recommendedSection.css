@@ -10,6 +10,11 @@ H2 {
 
 .recommendedCardsContainer{
     display: flex;
+    overflow-y: scroll;
+}
+
+.recommendedCardsContainer::-webkit-scrollbar {
+    display: none;
 }
 
 recommended_section-card {

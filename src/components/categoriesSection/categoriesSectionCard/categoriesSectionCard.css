@@ -10,13 +10,21 @@
     padding: 6px 2px 0 2px;
 }
 
-.cardImage {
+.cardImageContainer {
     width: 94%;
+    overflow: hidden;
     border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.cardImage {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .categoriesCardText {
-    margin: 15px 0 0 0;
+    margin: 15px 0 15px 0;
     color: #5C5470;
     font-family: REM;
     font-size: 24px;

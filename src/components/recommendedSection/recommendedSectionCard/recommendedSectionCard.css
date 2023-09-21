@@ -5,8 +5,7 @@ h1, h2, h3, p {
 }
 
 .recommendCardContainer {
-    width: 150px;
-
+    width: 200px;
     border-radius: 6px;
     background-color: #FAF0E6;
     display: flex;
@@ -17,12 +16,12 @@ h1, h2, h3, p {
 }
 
 .cardImageContainer {
-    width: 94%;
+    width: 90%;
     border-radius: 10px;
 }
 
 .cardImage {
-    object-fit: cover;
+    object-fit: contain;
     width: 100%;
     border-radius: 10px;
 }

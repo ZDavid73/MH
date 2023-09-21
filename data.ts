@@ -2,27 +2,39 @@ export const dataGeneral = {
     recommended: [
         {
             img: "https://img.freepik.com/free-vector/realistic-white-plate-isolated_1284-41743.jpg?w=2000",
-            title: "Pueba",
+            title: "Plates",
             price: "Cop $23500",
             description: "Set of 2 ceramics plates"
         },
         {
-            img: "https://img.freepik.com/free-vector/realistic-white-plate-isolated_1284-41743.jpg?w=2000",
-            title: "Pueba",
-            price: "Cop $23500",
-            description: "Set of 2 ceramics plates"
+            img: "https://http2.mlstatic.com/D_NQ_NP_2X_605638-MCO54127766904_032023-F.webp",
+            title: "Harina De Maíz",
+            price: "Cop $18000",
+            description: "Harina de Maíz Harina PAN Blanca 1kg x3 Uds"
         },
         {
-            img: "https://img.freepik.com/free-vector/realistic-white-plate-isolated_1284-41743.jpg?w=2000",
-            title: "Pueba",
-            price: "Cop $23500",
-            description: "Set of 2 ceramics plates"
+            img: "https://http2.mlstatic.com/D_NQ_NP_2X_816444-MCO70237320929_062023-F.webp",
+            title: "Maquina De Afeitar Groomen 500 + 1 Repuesto",
+            price: "Cop $33900",
+            description: "Máquina de afeitar con 5 navajas de alta precisión"
         },
         {
-            img: "https://img.freepik.com/free-vector/realistic-white-plate-isolated_1284-41743.jpg?w=2000",
-            title: "Pueba",
-            price: "Cop $23500",
-            description: "Set of 2 ceramics plates"
+            img: "https://http2.mlstatic.com/D_NQ_NP_2X_699538-MCO69510888045_052023-F.webp",
+            title: "Silla Ejecutiva Ergonómica",
+            price: "Cop $179900",
+            description: "Silla Ejecutiva Ergonómica Reclinable Con Espaldar Grande"
+        },
+        {
+            img: "https://http2.mlstatic.com/D_NQ_NP_2X_795428-MCO53300738016_012023-F.webp",
+            title: "Maletero Tomcat 34lt Litros",
+            price: "COP $99500",
+            description: "El maletero Tomcat de 34 litros te permite recorrer la ciudad sin preocuparte por el equipaje"
+        },
+        {
+            img: "https://http2.mlstatic.com/D_NQ_NP_2X_933606-MLA53057320829_122022-F.webp",
+            title: "Set de construcción Lego Minecraft La Emboscada del Creeper",
+            price: "COP $79900",
+            description: "El set Lego Minecraft te permitirá construir e interpretar aventuras inspiradas en el universo Minecraft"
         }
     ],
     search: [
