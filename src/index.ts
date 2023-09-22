@@ -1,8 +1,4 @@
-import "./components/navBar/navBar"
-import "./components/categoriesSection/categoriesSection"
-import "./components/advertisingSection/advertisingSection"
-import "./components/recommendedSection/recommendedSection"
-import "./components/searchPage/searchPage"
+import * as componentsExport from "./components/export"
 
 class AppContainer extends HTMLElement {
     constructor() {

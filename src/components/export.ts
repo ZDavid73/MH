@@ -1,0 +1,5 @@
+export { default as AdvertisingSection} from './advertisingSection/advertisingSection'
+export { default as CategoriesSection} from './categoriesSection/categoriesSection'
+export { default as NavBar} from './navBar/navBar'
+export { default as RecommendedSection} from './recommendedSection/recommendedSection'
+export { default as SearchPage} from './searchPage/searchPage'
