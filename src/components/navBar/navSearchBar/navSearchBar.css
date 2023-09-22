@@ -3,27 +3,38 @@
     height: 45px;
     display: flex;
     align-items: center;
-
     background-color: #5C5470;
     border: 1px solid #352F44;
     border-radius: 40px;
+    overflow: hidden; /* Para ocultar el desbordamiento de contenido */
+    transition: width 0.3s ease; /* Animación de transición para el ancho */
+}
+
+#navSearchBar:hover {
+    width: 600px; /* Ancho expandido al pasar el mouse */
 }
 
 #navSearchLogo {
     height: 40px;
     margin: 0 0 0 5px;
+    transition: transform 0.3s ease; /* Animación de transición para el logotipo de búsqueda */
+}
+
+#navSearchLogo:hover {
+    transform: scale(1.2); /* Efecto de escala al pasar el mouse */
 }
 
 input {
     background-color: transparent;
     border: none;
-    outline: nones;
+    outline: none;
     width: 100%;
     height: 100%;
     position: relative;
     top: 2px;
     color: #e3dfdb;
     margin: 0 0 0 4px;
+    transition: background-color 0.3s ease; /* Animación de transición para el fondo del campo de entrada */
 }
 
 input::placeholder {
@@ -32,5 +43,6 @@ input::placeholder {
 }
 
 input:focus {
-    outline:none;
+    outline: none;
+    background-color: rgba(92, 84, 112, 0.2); /* Cambio de color de fondo al enfocar el campo */
 }

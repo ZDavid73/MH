@@ -8,10 +8,28 @@
     background-color: #FAF0E6;
 }
 
+@media (max-width: 400px) {
+    #navBar {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    
+    }
+}
+
 #logoNav {
     height: 50px;
     margin: 0 20px 0 10px;
+    transition: transform 0.3s ease; /* Animación de transición para la propiedad transform */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
 }
+
+#logoNav:hover {
+    transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
 
 nav-searchbar {
     margin-right: 18%;

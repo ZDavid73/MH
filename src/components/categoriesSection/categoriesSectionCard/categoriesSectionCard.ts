@@ -46,14 +46,17 @@ class CategoriesSectionCard extends HTMLElement {
         const cardContainer = this.ownerDocument.createElement("div")
         cardContainer.classList.add("categoriesCardContainer")
         //Creation of childs
+        const cardImageContainer = this.ownerDocument.createElement("div")
+        cardImageContainer.classList.add("cardImageContainer")
         const cardImage = this.ownerDocument.createElement("img")
         cardImage.classList.add("cardImage")
         cardImage.setAttribute("src", `${this.properties.img}`)
         const title = this.ownerDocument.createElement("p")
         title.classList.add("categoriesCardText")
         title.innerHTML = `${this.properties.text}`
+        cardImageContainer.appendChild(cardImage)
         //Childs of: cardContainer
-        cardContainer.appendChild(cardImage)
+        cardContainer.appendChild(cardImageContainer)
         cardContainer.appendChild(title)
         //Childs of: this.shadowRoot
         this.shadowRoot?.appendChild(link)

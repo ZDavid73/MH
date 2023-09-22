@@ -1,18 +1,36 @@
 #recommendedContainer {
     width: 100%;
     margin: 30px 25px 0 25px;
-    border: 1px solid white;
 }
 
 H2 {
     color: #FAF0E6;
     font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones de transformación y sombra */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
 }
 
-.recommendedCardsContainer{
+H2:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+}
+
+.recommendedCardsContainer {
     display: flex;
+    overflow-y: scroll;
+}
+
+.recommendedCardsContainer::-webkit-scrollbar {
+    display: none;
 }
 
 recommended_section-card {
     margin: 0 20px 0 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones de transformación y sombra */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+recommended_section-card:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
 }

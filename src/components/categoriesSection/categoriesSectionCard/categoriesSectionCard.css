@@ -8,15 +8,31 @@
     justify-content: flex-start;
     align-items: center;
     padding: 6px 2px 0 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Animaciones de transformación, sombra y color de fondo */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+.categoriesCardContainer:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
+    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
+}
+
+.cardImageContainer {
+    width: 94%;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: aliceblue;
 }
 
 .cardImage {
-    width: 94%;
     border-radius: 10px;
+    object-fit: cover;
+    height: 100%;
 }
 
 .categoriesCardText {
-    margin: 15px 0 0 0;
+    margin: 15px 0 15px 0;
     color: #5C5470;
     font-family: REM;
     font-size: 24px;
@@ -24,3 +40,4 @@
     font-weight: 700;
     line-height: normal;
 }
+

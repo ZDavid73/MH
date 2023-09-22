@@ -1,0 +1,48 @@
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+.optionContainer {
+    margin: 10px 0 0 0;
+}
+
+#optionTitle {
+    color: #5C5470;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+#optionSelectorContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#optionSelectorContainer {
+    color: #5C5470;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#optionSelectorContainer select {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    color: #5C5470;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+#optionSelectorContainer select:focus {
+    border: none;
+}

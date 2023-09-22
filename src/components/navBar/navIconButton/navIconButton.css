@@ -1,3 +1,9 @@
 img {
     height: 50px;
+    transition: height 0.3s ease; /* Animación de transición para la altura */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+img:hover {
+    height: 60px; /* Cambio de altura al pasar el mouse */
 }
