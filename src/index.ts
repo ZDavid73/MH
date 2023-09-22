@@ -1,4 +1,5 @@
-import * as componentsExport from "./components/export"
+import * as Components from './components/export';
+
 
 class AppContainer extends HTMLElement {
     constructor() {

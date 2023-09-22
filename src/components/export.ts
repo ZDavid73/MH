@@ -3,3 +3,8 @@ export { default as CategoriesSection} from './categoriesSection/categoriesSecti
 export { default as NavBar} from './navBar/navBar'
 export { default as RecommendedSection} from './recommendedSection/recommendedSection'
 export { default as SearchPage} from './searchPage/searchPage'
+export { default as advertisingSectionAd} from './advertisingSection/advertisingSectionAd/advertisingSectionAd'
+export { default as CategoriesSectionCard} from './categoriesSection/categoriesSectionCard/categoriesSectionCard'
+export { default as NavIconButtonProperties} from './navBar/navIconButton/navIconButton'
+export { default as NavSearchBar} from './navBar/navSearchBar/navSearchBar'
+export { default as recommendedSectionCard} from './recommendedSection/recommendedSectionCard/recommendedSectionCard'

@@ -1,4 +1,4 @@
-import * as componentsExport from "../export"
+import * as Components from '../../components/export';
 import { dataGeneral } from "../../../data"
 
 const querystring = window.location.search
