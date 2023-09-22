@@ -8,14 +8,14 @@
     justify-content: flex-start;
     align-items: center;
     padding: 6px 2px 0 2px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Animaciones de transformación, sombra y color de fondo */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
 
 .categoriesCardContainer:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
-    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #EDEDED;
 }
 
 .cardImageContainer {
@@ -39,5 +39,17 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+    .cardImageContainer {
+        display: none; /* Oculta la imagen en móviles */
+    }
+
+    .categoriesCardContainer {
+        height: auto; /* Ajusta la altura del contenedor cuando no hay imagen */
+        padding: 20px 2px; /* Ajusta el padding cuando no hay imagen */
+    }
 }
 

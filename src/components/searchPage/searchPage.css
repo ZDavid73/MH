@@ -66,3 +66,32 @@ search_results-card {
 search_results-card:hover {
     background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
 }
+
+/* Código CSS existente ... */
+
+/* Media query para tabletas */
+@media (max-width: 1024px) {
+    #mainSearchContainer {
+        flex-direction: column;
+    }
+
+    #resultsContainer {
+        margin: 30px 0 0 0;
+        width: 100%;
+    }
+}
+
+/* Media query para celulares */
+@media (max-width: 768px) {
+    #mainSearchContainer {
+        padding: 20px;
+    }
+
+    #optionsContainer, #resultsContainer {
+        margin-top: 20px;
+    }
+
+    search_results-card {
+        height: auto; /* Ajusta la altura para celulares */
+    }
+}

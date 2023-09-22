@@ -1,58 +1,62 @@
-h1, h2, h3, h4, p {
-    margin: 0;
-    transition: color 0.3s ease; /* Animación de transición para el color del texto */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
-}
-
-h1:hover, h2:hover, h3:hover, h4:hover, p:hover {
-    color: #352F44; /* Cambio de color de texto al pasar el mouse */
-}
-
 .cardResultCotainer {
-    min-height: 180px;
-    width: 100%;
-    background-color: #FAF0E6;
     display: flex;
-    transition: background-color 0.3s ease; /* Animación de transición para el color de fondo */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
-}
-
-.cardResultCotainer:hover {
-    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
-}
-
-.productImgContainer {
-    height: 180px;
-    width: 180px;
-    background-color: aliceblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
 }
 
 .productImgContainer img {
+    max-width: 100px;
+    max-height: 100px;
     object-fit: cover;
-    width: 100%;
 }
 
 .productInfoContainer {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    width: 75%;
+    margin-left: 10px;
 }
 
 .productInfoContainer h2,
 .productInfoContainer h3,
 .productInfoContainer p {
-    width: fit-content;
-    transition: color 0.3s ease; /* Animación de transición para el color del texto */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+    margin: 0;
+    padding: 0;
 }
 
-.productInfoContainer h2:hover,
-.productInfoContainer h3:hover,
-.productInfoContainer p:hover {
-    color: #352F44; /* Cambio de color de texto al pasar el mouse */
+/* Para tablets */
+@media (max-width: 768px) {
+    .productInfoContainer h2 {
+        font-size: 18px;
+    }
+
+    .productInfoContainer h3,
+    .productInfoContainer p {
+        font-size: 16px;
+    }
+}
+
+/* Para móviles */
+@media (max-width: 480px) {
+    .cardResultCotainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productImgContainer img {
+        max-width: 80px;
+        max-height: 80px;
+    }
+
+    .productInfoContainer {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .productInfoContainer h2 {
+        font-size: 16px;
+    }
+
+    .productInfoContainer h3,
+    .productInfoContainer p {
+        font-size: 14px;
+    }
 }

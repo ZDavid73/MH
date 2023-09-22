@@ -1,6 +1,4 @@
-import "../navBar/navBar"
-import "./optionsInformation/optionsInformation"
-import "./searchResultsCard/searchResultsCard"
+import * as componentsExport from "../export"
 import { dataGeneral } from "../../../data"
 
 const querystring = window.location.search
