@@ -1,4 +1,7 @@
-import * as Components from '../../components/export';
+import "../navBar/navBar"
+import "../navBar/navIconButton/navIconButton"
+import "./optionsInformation/optionsInformation"
+import "./searchResultsCard/searchResultsCard"
 import { dataGeneral } from "../../../data"
 
 const querystring = window.location.search
@@ -26,6 +29,25 @@ class SearchPage extends HTMLElement {
             const navBar = this.ownerDocument.createElement("nav-bar")
             const mainSearchContainer = this.ownerDocument.createElement("div")
             mainSearchContainer.setAttribute("id", "mainSearchContainer")
+            const navBar2 = this.ownerDocument.createElement("div")
+            navBar2.setAttribute("id", "navBar2")
+                const iconChat = this.ownerDocument.createElement("nav-iconbutton")
+                const iconUpload = this.ownerDocument.createElement("nav-iconbutton")
+                const iconHome = this.ownerDocument.createElement("nav-iconbutton")
+                const iconShooping = this.ownerDocument.createElement("nav-iconbutton")
+                const iconOptions = this.ownerDocument.createElement("nav-iconbutton")
+
+                iconChat.setAttribute("icon", "/src/resources/svg/chat_icon.svg")
+                iconUpload.setAttribute("icon", "/src/resources/svg/upload_icon.svg")
+                iconHome.setAttribute("icon", "/src/resources/svg/home_icon_selected.svg")
+                iconShooping.setAttribute("icon", "/src/resources/svg/shoopingCart_icon.svg")
+                iconOptions.setAttribute("icon", "/src/resources/svg/options_icon.svg")
+
+                navBar2.appendChild(iconChat)
+                navBar2.appendChild(iconUpload)
+                navBar2.appendChild(iconHome)
+                navBar2.appendChild(iconShooping)
+                navBar2.appendChild(iconOptions)
                 //Creation of mainContainer elements
                 const optionsContainer = this.ownerDocument.createElement("div")
                 optionsContainer.setAttribute("id", "optionsContainer")
@@ -57,6 +79,7 @@ class SearchPage extends HTMLElement {
             this.shadowRoot?.appendChild(link)
             this.shadowRoot.appendChild(navBar)
             this.shadowRoot.appendChild(mainSearchContainer)
+            this.shadowRoot.appendChild(navBar2)
         }
 
     }

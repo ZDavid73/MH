@@ -1,27 +1,3 @@
-#iconBar {
-    display: flex;
-    align-items: center;
-    /* Otros estilos que desees aplicar a la barra de iconos */
-}
-
 img {
     height: 50px;
-    transition: height 0.3s ease;
-    cursor: pointer;
-}
-
-img:hover {
-    height: 60px;
-}
-
-@media (max-width: 768px) {
-    #iconBar {
-        position: fixed;
-        bottom: 60px; /* Ajustar según la altura de #navSearchBar */
-        left: 0;
-        width: 100%;
-        background-color: #FAF0E6; /* Añadir un color de fondo si es necesario */
-        justify-content: center; /* Centrar los iconos horizontalmente */
-        padding: 10px 0; /* Añadir un padding si es necesario */
-    }
 }

@@ -7,11 +7,6 @@ body {
 
 h1, h2, h3, p {
     margin: 0;
-    transition: color 0.3s ease; /* Animación de transición para el color del texto */
-}
-
-h1:hover, h2:hover, h3:hover, p:hover {
-    color: #FAF0E6; /* Cambio de color de texto al pasar el mouse */
 }
 
 #mainSearchContainer {
@@ -24,11 +19,11 @@ h1:hover, h2:hover, h3:hover, p:hover {
 #optionsContainer {
     display: flex;
     flex-direction: column;
-    transition: opacity 0.3s ease; /* Animación de transición para la opacidad */
 }
 
-#optionsContainer:hover {
-    opacity: 0.9; /* Cambio de opacidad al pasar el mouse */
+#optionsContainer {
+    display: flex;
+    flex-direction: column;
 }
 
 #optionsContainer h2 {
@@ -39,11 +34,6 @@ h1:hover, h2:hover, h3:hover, p:hover {
     font-weight: 700;
     line-height: normal;
     margin: 0 0 10px 0;
-    transition: color 0.3s ease; /* Animación de transición para el color del título */
-}
-
-#optionsContainer h2:hover {
-    color: #EDEDED; /* Cambio de color del título al pasar el mouse */
 }
 
 #resultsContainer {
@@ -59,15 +49,11 @@ search_results-card {
     margin: 0 0 20px 0;
     width: 100%;
     height: 50%;
-    transition: background-color 0.3s ease; /* Animación de transición para el color de fondo */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
 }
 
-search_results-card:hover {
-    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
+#navBar2 {
+    display: none;
 }
-
-/* Código CSS existente ... */
 
 /* Media query para tabletas */
 @media (max-width: 1024px) {
@@ -75,23 +61,66 @@ search_results-card:hover {
         flex-direction: column;
     }
 
+    #optionsContainer {
+        display: none; /* Oculta el contenedor de opciones en tabletas */
+    }
+
     #resultsContainer {
         margin: 30px 0 0 0;
         width: 100%;
     }
+
+    .search_results-card *:not(h2):not(.price) {
+        display: none; /* Oculta todos los elementos dentro de la tarjeta que no sean h2 o tengan la clase price */
+    }
 }
 
-/* Media query para celulares */
-@media (max-width: 768px) {
-    #mainSearchContainer {
-        padding: 20px;
+@media (max-width: 420px) {
+    #navBar2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 470px;
+        background-color: #FAF0E6;
+        position: relative;
+        top: 171px;
     }
 
-    #optionsContainer, #resultsContainer {
-        margin-top: 20px;
+    #navBar2 nav-iconbutton{
+        margin: 0 20px 0 20px;
+    }
+
+    #mainSearchContainer {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     search_results-card {
+        display: flex;
+        width: fit-content;
+        margin: 0 20px 0 0 ;
+    }
+
+    #optionsContainer {
+        display: none; /* Oculta el contenedor de opciones en celulares */
+    }
+
+    #resultsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #resultsContainer, .search_results-card {
+        margin-top: 20px;
+    }
+
+    .search_results-card {
         height: auto; /* Ajusta la altura para celulares */
     }
+
+    .search_results-card *:not(h2):not(.price) {
+        display: none; /* Oculta todos los elementos dentro de la tarjeta que no sean h2 o tengan la clase price */
+    }   
 }

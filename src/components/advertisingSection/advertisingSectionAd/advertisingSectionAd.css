@@ -6,21 +6,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregar animaciones de transformación y sombra */
-    cursor: pointer; /* Cambiar el cursor al pasar el mouse */
-}
-
-.adContainer:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
 }
 
 .adContainer img {
     object-fit: cover;
     height: 200px;
-    transition: opacity 0.3s ease; /* Agregar una animación de opacidad para la imagen */
+    width: auto;
+
 }
 
-.adContainer:hover img {
-    opacity: 0.8; /* Reducir la opacidad de la imagen al pasar el mouse */
+@media (max-width: 420px) {
+    .adContainer {
+        width: fit-content;
+        height: fit-content;
+        overflow: hidden;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px 0 0;
+    }
+
+    .adContainer img {
+        object-fit: cover;
+        width: 200px;
+        height: auto;
+        border-radius: 10px;
+    }
 }

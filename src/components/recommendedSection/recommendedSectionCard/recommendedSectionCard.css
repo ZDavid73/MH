@@ -1,16 +1,7 @@
-/* Animación de transición para h1, h2, h3 y p */
 h1, h2, h3, p {
     margin: 0;
     width: 100%;
     text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Animaciones de transformación, sombra y cambio de color de fondo */
-    cursor: pointer; /* Cambio del cursor al pasar el mouse */
-}
-
-h1:hover, h2:hover, h3:hover, p:hover {
-    transform: scale(1.05); /* Efecto de escala al pasar el mouse */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra al pasar el mouse */
-    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
 }
 
 .recommendCardContainer {
@@ -64,4 +55,28 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 420px) {
+    .recommendCardContainer {
+        width: 180px;
+        height: fit-content;
+        border-radius: 4px;
+        background-color: #FAF0E6;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 1px 5px 1px;
+        margin: 0 0 0 10px;
+    }
+    
+    h3 {
+        display: none;
+    }
+    
+    p {
+        display: none;
+    }
+
 }

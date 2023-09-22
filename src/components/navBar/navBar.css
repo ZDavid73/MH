@@ -4,19 +4,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-
     background-color: #FAF0E6;
-}
-
-@media (max-width: 400px) {
-    #navBar {
-        width: 100%;
-        height: 80px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    
-    }
 }
 
 #logoNav {
@@ -34,4 +22,37 @@ nav-iconbutton {
 
 .horizontalSpace {
     width: 100%;
+}
+
+@media (max-width: 420px) {
+    #navBar {
+        width: 0;
+        height: 80px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 10px 20px 0 20px;
+        background-color: transparent;
+    }
+
+    #logoNav {
+        display: none;
+    }
+
+    .horizontalSpace {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+
+    .itemPhone {
+        display: none;
+    }
+
+    #userIcon {
+        display: block;
+        margin: 0 0 0 10px;
+        color: #FAF0E6;
+        fill: #FAF0E6;
+    }
 }

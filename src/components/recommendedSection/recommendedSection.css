@@ -6,16 +6,9 @@
 H2 {
     color: #FAF0E6;
     font-size: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; 
-    cursor: pointer; 
 }
 
-H2:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-}
-
-.recommendedCardsContainer {
+.recommendedCardsContainer{
     display: flex;
     overflow-y: scroll;
 }
@@ -24,32 +17,30 @@ H2:hover {
     display: none;
 }
 
-.recommended_section-card {
+recommended_section-card {
     margin: 0 20px 0 0;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer; 
 }
 
-.recommended_section-card:hover {
-    transform: scale(1.05); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-}
-
-/* Para tablets */
-@media (max-width: 768px) {
-    .recommended_section-card {
-        margin: 0 10px 0 0; /* Reduce el margen entre las tarjetas */
+@media (max-width: 420px) {
+    #recommendedContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 30px 25px 0 25px;
+        overflow: hidden;
+        height: 475px;
     }
-}
 
-/* Para móviles */
-@media (max-width: 480px) {
     .recommendedCardsContainer {
-        flex-direction: column; /* Los elementos se apilan verticalmente */
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        overflow-y: scroll;
     }
 
-    .recommended_section-card {
-        margin: 0 0 20px 0; /* Ajusta el margen para el apilamiento vertical */
+    recommended_section-card {
+        display: flex;
+        width: fit-content;
+        margin: 0;
     }
 }
