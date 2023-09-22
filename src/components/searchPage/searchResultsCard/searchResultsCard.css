@@ -1,5 +1,11 @@
 h1, h2, h3, h4, p {
     margin: 0;
+    transition: color 0.3s ease; /* Animación de transición para el color del texto */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+h1:hover, h2:hover, h3:hover, h4:hover, p:hover {
+    color: #352F44; /* Cambio de color de texto al pasar el mouse */
 }
 
 .cardResultCotainer {
@@ -7,8 +13,14 @@ h1, h2, h3, h4, p {
     width: 100%;
     background-color: #FAF0E6;
     display: flex;
-
+    transition: background-color 0.3s ease; /* Animación de transición para el color de fondo */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
 }
+
+.cardResultCotainer:hover {
+    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
+}
+
 .productImgContainer {
     height: 180px;
     width: 180px;
@@ -31,32 +43,16 @@ h1, h2, h3, h4, p {
     width: 75%;
 }
 
-.productInfoContainer h2 {
-    color: #352F44;
-    font-family: REM;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    width: fit-content;
-}
-
-.productInfoContainer h3 {
-    color: #5C5470;
-    font-family: REM;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: fit-content;
-}
-
+.productInfoContainer h2,
+.productInfoContainer h3,
 .productInfoContainer p {
-    color: #5C5470;
-    font-family: REM;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
     width: fit-content;
+    transition: color 0.3s ease; /* Animación de transición para el color del texto */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+.productInfoContainer h2:hover,
+.productInfoContainer h3:hover,
+.productInfoContainer p:hover {
+    color: #352F44; /* Cambio de color de texto al pasar el mouse */
 }

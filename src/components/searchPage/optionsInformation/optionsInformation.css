@@ -16,4 +16,10 @@
     font-weight: 700;
     line-height: normal;
     margin: 0;
+    transition: color 0.3s ease; /* Animación de transición para el color del título */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+#optionsInformationContainer h3:hover {
+    color: #352F44; /* Cambio de color al pasar el mouse */
 }

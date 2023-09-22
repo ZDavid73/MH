@@ -7,6 +7,11 @@ body {
 
 h1, h2, h3, p {
     margin: 0;
+    transition: color 0.3s ease; /* Animación de transición para el color del texto */
+}
+
+h1:hover, h2:hover, h3:hover, p:hover {
+    color: #FAF0E6; /* Cambio de color de texto al pasar el mouse */
 }
 
 #mainSearchContainer {
@@ -19,11 +24,11 @@ h1, h2, h3, p {
 #optionsContainer {
     display: flex;
     flex-direction: column;
+    transition: opacity 0.3s ease; /* Animación de transición para la opacidad */
 }
 
-#optionsContainer {
-    display: flex;
-    flex-direction: column;
+#optionsContainer:hover {
+    opacity: 0.9; /* Cambio de opacidad al pasar el mouse */
 }
 
 #optionsContainer h2 {
@@ -34,6 +39,11 @@ h1, h2, h3, p {
     font-weight: 700;
     line-height: normal;
     margin: 0 0 10px 0;
+    transition: color 0.3s ease; /* Animación de transición para el color del título */
+}
+
+#optionsContainer h2:hover {
+    color: #EDEDED; /* Cambio de color del título al pasar el mouse */
 }
 
 #resultsContainer {
@@ -49,4 +59,10 @@ search_results-card {
     margin: 0 0 20px 0;
     width: 100%;
     height: 50%;
+    transition: background-color 0.3s ease; /* Animación de transición para el color de fondo */
+    cursor: pointer; /* Cambio del cursor al pasar el mouse */
+}
+
+search_results-card:hover {
+    background-color: #EDEDED; /* Cambio de color de fondo al pasar el mouse */
 }
