@@ -34,13 +34,3 @@ input::placeholder {
 input:focus {
     outline:none;
 }
-
-@media (max-width: 420px) {
-    #navSearchBar {
-        width: 100%;
-    }
-
-    input {
-        width: 300px;
-    }
-}   
