@@ -21,18 +21,18 @@ class AppContainer extends HTMLElement {
             link.setAttribute("rel", "stylesheet")
             link.setAttribute("href", "/src/appContainer.css")
             //Creation of web components
-            const navBar = this.ownerDocument.createElement("nav-bar")
-            const categoriesSection = this.ownerDocument.createElement("categories-section")
-            const advertisingSection = this.ownerDocument.createElement("advertising-section")
-            const recommendedSection = this.ownerDocument.createElement("recommended-section")
-            const LandingPageSection = this.ownerDocument.createElement("landing-pages")
+            // const navBar = this.ownerDocument.createElement("nav-bar")
+            // const categoriesSection = this.ownerDocument.createElement("categories-section")
+            // const advertisingSection = this.ownerDocument.createElement("advertising-section")
+            // const recommendedSection = this.ownerDocument.createElement("recommended-section")
+            const LandingPageSection = this.ownerDocument.createElement("landing-page")
 
             //Append of this.shadowRoot
-            this.shadowRoot.appendChild(link)
-            this.shadowRoot.appendChild(navBar)
-            this.shadowRoot.appendChild(categoriesSection)
-            this.shadowRoot.appendChild(advertisingSection)
-            this.shadowRoot.appendChild(recommendedSection)
+            // this.shadowRoot.appendChild(link)
+            // this.shadowRoot.appendChild(navBar)
+            // this.shadowRoot.appendChild(categoriesSection)
+            // this.shadowRoot.appendChild(advertisingSection)
+            // this.shadowRoot.appendChild(recommendedSection)
             this.shadowRoot.appendChild(LandingPageSection)
         }
        
