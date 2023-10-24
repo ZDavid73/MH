@@ -1,0 +1,81 @@
+.description-container {
+    background-color: white; /* color de fondo */
+    padding: 20px; /* espaciado interno */
+    color: #F24333; /* color del texto */
+    font-family: Arial, sans-serif; /* tipo de fuente */
+    border-radius: 5px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    text-align: center; /* alinea el texto al centro */
+}
+
+.description-content {
+    max-width: 800px; /* ancho máximo para el contenido */
+    margin: auto; /* centra el contenido */
+}
+
+.description-content h1 {
+    margin-bottom: 20px; /* espacio debajo del encabezado */
+}
+
+.description-content p {
+    margin-bottom: 20px; /* espacio debajo del párrafo */
+    color: #564D4A;
+}
+
+.description-content img {
+    max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* mantiene la proporción de aspecto */
+    margin-bottom: 20px; /* espacio debajo de la imagen */
+    margin-left: 70%;
+}
+
+.action-buttons {
+    display: flex; /* usa flexbox para alinear los botones */
+    justify-content: center; /* centra los botones */
+    gap: 10px; /* espacio entre los botones */
+
+}
+
+.action-buttons #shop {
+    background-color: #F7F4F3;
+    color: #564D4A;
+    border: 2px solid #564D4A; 
+    border-radius: 30px; /* Bordes redondeados para los botones */
+
+}
+
+.action-buttons #create-account {
+    background-color: #F24333; 
+    color: #F7F4F3; 
+    border: 2px solid #F7F4F3; 
+    border-radius: 30px; /* Bordes redondeados para los botones */
+
+}
+
+.action-buttons #shop:hover {
+    background-color: #F24333; 
+    color: #F7F4F3; 
+    border: 2px solid #F7F4F3; 
+}
+
+.action-buttons #create-account:hover {
+    background-color: #F7F4F3;
+    color: #564D4A;
+    border: 2px solid #564D4A; 
+}
+
+.action-buttons button {
+    background-color: white; /* color de fondo para los botones */
+    color: #F24333; /* color del texto para los botones */
+    border: 2px solid #F24333; /* borde para los botones */
+    padding: 10px 20px; /* espaciado interno para los botones */
+    cursor: pointer; /* indica que es clickeable */
+    text-transform: uppercase; /* texto en mayúsculas */
+    font-weight: bold; /* texto en negrita */
+    transition: background-color 0.3s ease; /* transición suave del color de fondo */
+}
+
+.action-buttons button:hover {
+    background-color: #F24333; /* color de fondo cuando se pasa el cursor */
+    color: white; /* color del texto cuando se pasa el cursor */
+}

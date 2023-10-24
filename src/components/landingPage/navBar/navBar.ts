@@ -1,6 +1,8 @@
-export default class navBarlanding extends HTMLElement {
+export default class NavBarLanding extends HTMLElement {
     constructor() {
         super();
+
+        // Attach a shadow root to the element.
         this.attachShadow({ mode: 'open' });
     }
 
@@ -9,19 +11,27 @@ export default class navBarlanding extends HTMLElement {
     }
 
     render() {
-        if (this.shadowRoot){
+        // Verifica si shadowRoot está disponible
+        if (this.shadowRoot) {
+            // Crear un elemento link para referenciar el archivo CSS
+            const link = document.createElement("link");
+            link.setAttribute("rel", "stylesheet");
+            link.setAttribute("href", "/src/components/landingPage/navBar/navBar.css");
 
-        this.shadowRoot.innerHTML = `
-      
-            <div id="nav-bar">
-                <img src="logo.png" alt="logo" /> 
-                <button id="sign-up">sign-up</button>
-                <button id="login">login</button>
-            </div>
-        `;
+            // Establecer el contenido interno del shadowRoot
+            this.shadowRoot.innerHTML = `
+                <div id="navbar">
+                    <img src="/src/resources/svg/logo_dark_v.svg" alt="logoNav" /> 
+                    <button id="sign-up">sign-up</button>
+                    <button id="login">login</button>
+                </div>
+            `;
+
+            // Agregar el elemento link al shadowRoot
+            this.shadowRoot.appendChild(link);
+        }
     }
 }
-}
 
-customElements.define('nav-barlanding', navBarlanding);
-//logo de la marca//
+// Definir el nuevo custom element
+customElements.define('nav-barlanding', NavBarLanding);
