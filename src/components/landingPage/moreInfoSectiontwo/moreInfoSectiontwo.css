@@ -1,0 +1,31 @@
+.more-info-containertwo {
+    background-color: #F7F4F3; /* color de fondo */
+    padding: 20px; /* espaciado interno */
+    color: #F24333; /* color del texto */
+    font-family: Arial, sans-serif; /* tipo de fuente */
+    border-radius: 5px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    text-align: center; /* alinea el texto al centro */
+    overflow: hidden; /* previene que los hijos desborden el contenedor */
+}
+
+.more-info-containertwo .more-info-content {
+    max-width: 800px; /* ancho máximo para el contenido */
+    margin: auto; /* centra el contenido */
+}
+
+.more-info-containertwo h2 {
+    margin-bottom: 20px; /* espacio debajo del encabezado */
+}
+
+.more-info-containertwo p {
+    margin-bottom: 20px; /* espacio debajo del párrafo */
+    color: #564D4A;
+}
+
+.more-info-containertwo img {
+    max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* mantiene la proporción de aspecto */
+    margin-bottom: 20px; /* espacio debajo de la imagen */
+    margin-left: 70%;
+}

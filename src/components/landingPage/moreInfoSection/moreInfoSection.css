@@ -1,0 +1,46 @@
+/* moreInfoSection.css */
+.more-info-container {
+    background-color: #F24333; /* color de fondo */
+    padding: 20px; /* espaciado interno */
+    color: #F7F4F3;; /* color del texto */
+    font-family: Arial, sans-serif; /* tipo de fuente */
+    border-radius: 5px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    position: relative; /* posición relativa para contener elementos absolutos si es necesario */
+    overflow: hidden; /* previene que los hijos desborden el contenedor */
+}
+
+.more-info-content {
+    max-width: 800px; /* ancho máximo para el contenido */
+    margin: auto; /* centra el contenido */
+    text-align: center; /* alinea el texto al centro */
+}
+
+.more-info-content h2 {
+    margin-bottom: 20px; /* espacio debajo del encabezado */
+    color: #F7F4F3;
+}
+
+.more-info-content p {
+    margin-bottom: 20px; /* espacio debajo del párrafo */
+}
+
+.more-info-content img {
+    max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* mantiene la proporción de aspecto */
+    margin-bottom: 20px; /* espacio debajo de la imagen */
+    margin-right: 190%;
+}
+
+#read-more {
+    background-color: #564D4A;
+    color: #F7F4F3;
+    border: 2px solid #564D4A; 
+    border-radius: 30px; /* Bordes redondeados para los botones */
+}
+
+#read-more:hover {
+    background-color: #F24333; 
+    color: #F7F4F3; 
+    border: 2px solid #F7F4F3; 
+}
