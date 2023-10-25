@@ -1,8 +1,7 @@
-/* moreInfoSection.css */
 .more-info-container {
     background-color: #F24333; /* color de fondo */
     padding: 20px; /* espaciado interno */
-    color: #F7F4F3;; /* color del texto */
+    color: #F7F4F3; /* color del texto */
     font-family: Arial, sans-serif; /* tipo de fuente */
     border-radius: 5px; /* esquinas redondeadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
@@ -13,7 +12,7 @@
 .more-info-content {
     max-width: 800px; /* ancho máximo para el contenido */
     margin: auto; /* centra el contenido */
-    text-align: center; /* alinea el texto al centro */
+    text-align: right; /* Alinea el texto a la derecha */
 }
 
 .more-info-content h2 {
@@ -29,7 +28,7 @@
     max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* mantiene la proporción de aspecto */
     margin-bottom: 20px; /* espacio debajo de la imagen */
-    margin-right: 190%;
+    float: left; /* Alinea la imagen a la izquierda */
 }
 
 #read-more {

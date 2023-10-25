@@ -22,8 +22,10 @@ export default class NavBarLanding extends HTMLElement {
             this.shadowRoot.innerHTML = `
                 <div id="navbar">
                     <img src="/src/resources/svg/logo_dark_v.svg" alt="logoNav" /> 
+                    <div class="button-container">
                     <button id="sign-up">sign-up</button>
                     <button id="login">login</button>
+                    <div/>
                 </div>
             `;
 

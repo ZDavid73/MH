@@ -24,6 +24,7 @@ class AppContainer extends HTMLElement {
             const categoriesSection = this.ownerDocument.createElement("categories-section")
             const advertisingSection = this.ownerDocument.createElement("advertising-section")
             const recommendedSection = this.ownerDocument.createElement("recommended-section")
+
             this.shadowRoot.appendChild(link)
             this.shadowRoot.appendChild(navBar)
             this.shadowRoot.appendChild(categoriesSection)
