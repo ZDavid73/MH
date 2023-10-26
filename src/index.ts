@@ -15,34 +15,20 @@ class AppContainer extends HTMLElement {
 
     render() {
         if (this.shadowRoot != null || this.shadowRoot != undefined) {
+            this.shadowRoot.innerHTML = ""
+
             switch (state.screen) {
                 case Screens.landingPage:
                     const landingPage = this.ownerDocument.createElement("landing-page")
                     this.shadowRoot.appendChild(landingPage)
                     break;
                 case Screens.mainPage:
-
+                    const mainPage = this.ownerDocument.createElement("main-page")
+                    this.shadowRoot.appendChild(mainPage)
                     break;
-
                 default:
                     break;
             }
-            // const link = this.ownerDocument.createElement("link")
-            // link.setAttribute("rel", "stylesheet")
-            // link.setAttribute("href", "/src/appContainer.css")
-            // const navBar = this.ownerDocument.createElement("nav-bar")
-            // const categoriesSection = this.ownerDocument.createElement("categories-section")
-            // const advertisingSection = this.ownerDocument.createElement("advertising-section")
-            // const recommendedSection = this.ownerDocument.createElement("recommended-section")
-
-            // this.shadowRoot.appendChild(link)
-            // this.shadowRoot.appendChild(navBar)
-            // this.shadowRoot.appendChild(categoriesSection)
-            // this.shadowRoot.appendChild(advertisingSection)
-            // this.shadowRoot.appendChild(recommendedSection)
-
-
-
         }
 
     }

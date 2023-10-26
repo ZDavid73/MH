@@ -12,6 +12,7 @@ export const dispatch = (action: Action) => {
     const clone = JSON.parse(JSON.stringify(state));
     state = reducer(action, clone);
     observers.forEach((o) => o.render());
+    console.log(state)
 };
 
 export const addObserver = (observer: Observer) => {
