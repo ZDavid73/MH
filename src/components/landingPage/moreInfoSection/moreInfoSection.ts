@@ -1,4 +1,6 @@
-export default class MoreInfoSection extends HTMLElement {
+import "../../export";
+
+export class MoreInfoSection extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });

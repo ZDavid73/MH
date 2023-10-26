@@ -1,9 +1,11 @@
+import "../../../export";
+
 const enum CategoriesSectionCardProperties {
     img = "img",
     text = "text"
 }
 
-class CategoriesSectionCard extends HTMLElement {
+export class CategoriesSectionCard extends HTMLElement {
     properties: Record<CategoriesSectionCardProperties, string> = {
         img: "",
         text: ""
@@ -65,5 +67,3 @@ class CategoriesSectionCard extends HTMLElement {
 }
 
 customElements.define("categories_section-cards", CategoriesSectionCard)
-
-export default CategoriesSectionCard

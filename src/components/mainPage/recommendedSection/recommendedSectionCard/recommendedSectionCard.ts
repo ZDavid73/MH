@@ -1,3 +1,5 @@
+import "../../../export";
+
 const enum recommendedSectionCardProperties {
     img = "img",
     title = "title",
@@ -6,7 +8,7 @@ const enum recommendedSectionCardProperties {
 
 }
 
-class recommendedSectionCard extends HTMLElement {
+export class recommendedSectionCard extends HTMLElement {
     properties: Record<recommendedSectionCardProperties, string> = {
         img: "",
         title: "",
@@ -87,5 +89,3 @@ class recommendedSectionCard extends HTMLElement {
 }
 
 customElements.define("recommended_section-card", recommendedSectionCard)
-
-export default recommendedSectionCard

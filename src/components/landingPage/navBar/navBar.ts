@@ -1,4 +1,6 @@
-export default class NavBarLanding extends HTMLElement {
+import "../../export";
+
+export class NavBarLanding extends HTMLElement {
     constructor() {
         super();
 

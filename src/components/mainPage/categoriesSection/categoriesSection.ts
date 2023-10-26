@@ -1,6 +1,6 @@
-import "./categoriesSectionCard/categoriesSectionCard"
+import "../../export"
 
-class CategoriesSection extends HTMLElement {
+export class CategoriesSection extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -71,5 +71,3 @@ class CategoriesSection extends HTMLElement {
 }
 
 customElements.define("categories-section", CategoriesSection)
-
-export default CategoriesSection

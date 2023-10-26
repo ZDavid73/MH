@@ -1,10 +1,12 @@
+import "../../export"
+
 const queryString = window.location.search
 console.log(queryString)
 
 const params = new URLSearchParams(queryString)
 console.log(params.get("search"))
 
-class NavSearchBar extends HTMLElement {
+export class NavSearchBar extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -49,5 +51,3 @@ class NavSearchBar extends HTMLElement {
 }
 
 customElements.define("nav-searchbar", NavSearchBar)
-
-export default NavSearchBar

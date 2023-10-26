@@ -1,10 +1,26 @@
-export { default as AdvertisingSection} from './advertisingSection/advertisingSection'
-export { default as CategoriesSection} from './categoriesSection/categoriesSection'
-export { default as NavBar} from './navBar/navBar'
-export { default as RecommendedSection} from './recommendedSection/recommendedSection'
-export { default as SearchPage} from './searchPage/searchPage'
-export { default as advertisingSectionAd} from './advertisingSection/advertisingSectionAd/advertisingSectionAd'
-export { default as CategoriesSectionCard} from './categoriesSection/categoriesSectionCard/categoriesSectionCard'
-export { default as NavIconButtonProperties} from './navBar/navIconButton/navIconButton'
-export { default as NavSearchBar} from './navBar/navSearchBar/navSearchBar'
-export { default as recommendedSectionCard} from './recommendedSection/recommendedSectionCard/recommendedSectionCard'
+//import "src/components/export"
+
+export const directorioExport = () => {
+
+}
+
+//Main Page
+export { MainPage } from './mainPage/mainPage'
+export { AdvertisingSection } from './mainPage/advertisingSection/advertisingSection'
+export { advertisingSectionAd} from './mainPage/advertisingSection/advertisingSectionAd/advertisingSectionAd'
+export { CategoriesSection } from './mainPage/categoriesSection/categoriesSection'
+export { CategoriesSectionCard } from './mainPage/categoriesSection/categoriesSectionCard/categoriesSectionCard'
+export { RecommendedSection } from './mainPage/recommendedSection/recommendedSection'
+export { recommendedSectionCard } from './mainPage/recommendedSection/recommendedSectionCard/recommendedSectionCard'
+
+//Landing Page
+export { LandingPage } from '../pages/landingPage/landingPage'
+export { DescriptionSection } from './landingPage/descriptionSection/descriptionSection'
+export { MoreInfoSection } from './landingPage/moreInfoSection/moreInfoSection'
+export { MoreInfoSectiontwo } from './landingPage/moreInfoSectiontwo/moreInfoSectiontwo'
+export { NavBarLanding } from './landingPage/navBar/navBar'
+
+//Navbar
+export { NavBar } from './navBar/navBar'
+export { NavIconButton } from './navBar/navIconButton/navIconButton'
+export { NavSearchBar } from './navBar/navSearchBar/navSearchBar'

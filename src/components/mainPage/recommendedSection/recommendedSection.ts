@@ -1,7 +1,7 @@
-import "./recommendedSectionCard/recommendedSectionCard"
-import { dataGeneral } from "../../../data"
+import "../../export"
+import { dataGeneral } from "../../../../data"
 
-class RecommendedSection extends HTMLElement {
+export class RecommendedSection extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -41,5 +41,3 @@ class RecommendedSection extends HTMLElement {
 }
 
 customElements.define("recommended-section", RecommendedSection)
-
-export default RecommendedSection

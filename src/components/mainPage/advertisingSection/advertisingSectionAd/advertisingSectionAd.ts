@@ -1,8 +1,10 @@
+import "../../../export";
+
 const enum advertisingSectionAdProperties {
     img = "img"
 }
 
-class advertisingSectionAd extends HTMLElement {
+export class advertisingSectionAd extends HTMLElement {
     properties: Record<advertisingSectionAdProperties, string> = {
         img: ""
     }
@@ -52,5 +54,3 @@ class advertisingSectionAd extends HTMLElement {
 }
 
 customElements.define("advertising_section-ad", advertisingSectionAd)
-
-export default advertisingSectionAd

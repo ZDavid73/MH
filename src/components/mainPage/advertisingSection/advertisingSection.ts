@@ -1,9 +1,9 @@
-import "./advertisingSectionAd/advertisingSectionAd"
+import "../../export"
 
-class AdvertisingSection extends HTMLElement {
+export class AdvertisingSection extends HTMLElement {
     constructor() {
         super()
-        this.attachShadow({mode: "open"})
+        this.attachShadow({ mode: "open" })
     }
 
     connectedCallback() {
@@ -32,5 +32,3 @@ class AdvertisingSection extends HTMLElement {
 }
 
 customElements.define("advertising-section", AdvertisingSection)
-
-export default AdvertisingSection

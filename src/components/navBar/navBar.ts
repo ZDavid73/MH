@@ -1,7 +1,6 @@
-import  "./navSearchBar/navSearchBar"
-import "./navIconButton/navIconButton"
+import "../export"
 
-class NavBar extends HTMLElement {
+export class NavBar extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -54,5 +53,3 @@ class NavBar extends HTMLElement {
 }
 
 customElements.define("nav-bar", NavBar)
-
-export default NavBar

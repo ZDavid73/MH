@@ -1,8 +1,10 @@
+import "../../export";
+
 const enum NavIconButtonProperties {
     icon = "icon"
 }
 
-class NavIconButton extends HTMLElement {
+export class NavIconButton extends HTMLElement {
     properties: Record<NavIconButtonProperties, string> = {
         icon: ""
     }
@@ -51,5 +53,3 @@ class NavIconButton extends HTMLElement {
 }
 
 customElements.define("nav-iconbutton", NavIconButton)
-
-export default NavIconButton

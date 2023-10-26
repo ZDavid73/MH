@@ -1,4 +1,6 @@
-export default class DescriptionSection extends HTMLElement {
+import "../../export";
+
+export class DescriptionSection extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: 'open' });
