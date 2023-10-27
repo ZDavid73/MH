@@ -1,33 +1,46 @@
 .more-info-containertwo {
     background-color: #F7F4F3; /* color de fondo */
-    padding: 20px; /* espaciado interno */
     color: #F24333; /* color del texto */
-    font-family: Arial, sans-serif; /* tipo de fuente */
+    font-family: REM; /* tipo de fuente */
     border-radius: 5px; /* esquinas redondeadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
-    text-align: center; /* alinea el texto al centro */
     overflow: hidden; /* previene que los hijos desborden el contenedor */
+    height: 110%;
+    position: relative;
+    top: -23%;
+    display: flex;
 }
 
-.more-info-containertwo .more-info-content {
-    max-width: 900px; /* ancho aumentado para el contenido */
-    margin-left: 40px; /* mueve el contenido más hacia la izquierda */
+.more-info-content {
+    text-align: start;
+    position: relative;
+    top: 20%;
+    margin: 0 0 0 10%;
 }
 
-.more-info-containertwo h2,
+.more-info-containertwo h2 {
+    color: #F24333;
+    font-family: REM;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
 .more-info-containertwo p {
-    text-align: left; /* Alinea el texto a la izquierda */
-    margin-bottom: 3%; /* espacio debajo del párrafo y encabezado */
-}
+    color: var(--Dark, #564D4A);
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 
-.more-info-containertwo p {
-    color: #564D4A;
+    max-width: 70%;
 }
 
 .more-info-containertwo img {
-    max-width: 50%; /* aumenta el ancho de la imagen */
-    height: auto; /* mantiene la proporción de aspecto */
-    float: right; /* Alinea la imagen a la derecha */
-    margin-bottom: 20px; /* espacio debajo de la imagen */
-    margin-right: -500px; /* mueve la imagen más hacia la derecha */
+    position: relative;
+    top: 12%;
+    left: -15%;
+    max-height: 80%;
 }

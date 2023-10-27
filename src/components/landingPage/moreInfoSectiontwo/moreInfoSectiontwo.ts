@@ -20,8 +20,8 @@ export class MoreInfoSectiontwo extends HTMLElement {
                     <div class="more-info-content">
                         <h2>Brand new things for your home!</h2>
                         <p>Find everything you would need for the commodities of your place. Buy all sort of furniture and decorations to make your house feel like yours.</p>
-                        <img src="/src/resources/jpg/comodo-sillon-gris-aislado-sobre-fondo-blanco 1.png" /> 
                     </div>
+                    <img src="/src/resources/jpg/sillonComodo.png" />
                 </div>
             `;
 

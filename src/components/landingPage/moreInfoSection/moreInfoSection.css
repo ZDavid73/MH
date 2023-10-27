@@ -1,41 +1,80 @@
 .more-info-container {
     background-color: #F24333; /* color de fondo */
-    padding: 20px; /* espaciado interno */
-    color: #F7F4F3; /* color del texto */
-    font-family: Arial, sans-serif; /* tipo de fuente */
-    border-radius: 5px; /* esquinas redondeadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
-    position: relative; /* posición relativa para contener elementos absolutos si es necesario */
     overflow: hidden; /* previene que los hijos desborden el contenedor */
+    width: 110%;
+    height: 80%;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+
+    /* CSS para rotarlo */
+    transform: rotate(6deg);
+    transform-origin: 0% 0%;
+
+    /* Para subirlo */
+    position: relative;
+    top: -166px;
 }
 
 .more-info-content {
-    max-width: 800px; /* ancho máximo para el contenido */
-    margin: auto; /* centra el contenido */
     text-align: right; /* Alinea el texto a la derecha */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+    top: 35%;
+    left: -18%;
+
+    /* CSS para rotarlo a la normalidad*/
+    transform: rotate(-6deg);
+    transform-origin: 0% 0%;
 }
 
-.more-info-content h2 {
-    margin-bottom: 20px; /* espacio debajo del encabezado */
+.more-info-content h1 {
     color: #F7F4F3;
+    font-family: REM;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
 }
 
 .more-info-content p {
-    margin-bottom: 20px; /* espacio debajo del párrafo */
+    color: #F7F4F3;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 50%;
 }
 
-.more-info-content img {
+.more-info-container img {
     max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* mantiene la proporción de aspecto */
-    margin-bottom: 20px; /* espacio debajo de la imagen */
-    float: left; /* Alinea la imagen a la izquierda */
+    position: relative;
+    left: 12%;
+    top: 8%;
+
+    /* CSS para rotarlo a la normalidad*/
+    transform: rotate(-6deg);
+    transform-origin: 0% 0%;
 }
 
 #read-more {
     background-color: #564D4A;
-    color: #F7F4F3;
-    border: 2px solid #564D4A; 
+    border: none;
     border-radius: 30px; /* Bordes redondeados para los botones */
+    color: #F7F4F3;
+    font-family: REM;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    height: 42px;
+    width: 140px;
 }
 
 #read-more:hover {

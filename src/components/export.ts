@@ -1,5 +1,7 @@
 //import "src/components/export"
 
+import { NavBarLanding } from './navBar/navBarLandingPage/navBarLanding'
+
 export const directorioExport = () => {
 
 }
@@ -18,9 +20,10 @@ export { LandingPage } from '../pages/landingPage/landingPage'
 export { DescriptionSection } from './landingPage/descriptionSection/descriptionSection'
 export { MoreInfoSection } from './landingPage/moreInfoSection/moreInfoSection'
 export { MoreInfoSectiontwo } from './landingPage/moreInfoSectiontwo/moreInfoSectiontwo'
-export { NavBarLanding } from './landingPage/navBar/navBar'
+export { LandingFooter } from './landingPage/landingFooter/landingFooter'
 
 //Navbar
 export { NavBar } from './navBar/navBar'
 export { NavIconButton } from './navBar/navIconButton/navIconButton'
 export { NavSearchBar } from './navBar/navSearchBar/navSearchBar'
+export { NavBarLanding } from './navBar/navBarLandingPage/navBarLanding'

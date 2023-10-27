@@ -16,11 +16,13 @@ class AppContainer extends HTMLElement {
     render() {
         if (this.shadowRoot != null || this.shadowRoot != undefined) {
             this.shadowRoot.innerHTML = ""
+            document.body.classList.remove(...document.body.classList)
 
             switch (state.screen) {
                 case Screens.landingPage:
                     const landingPage = this.ownerDocument.createElement("landing-page")
                     this.shadowRoot.appendChild(landingPage)
+                    document.body.classList.add("landingPage")
                     break;
                 case Screens.mainPage:
                     const mainPage = this.ownerDocument.createElement("main-page")

@@ -20,12 +20,13 @@ export class DescriptionSection extends HTMLElement {
                     <div class="description-content">
                         <h1>Your new market page!</h1>
                         <p>A place where you can buy everything you need with that close feeling of neighborhood.</p>
-                        <img src="/src/resources/jpg/mujer-posando-saltando-sosteniendo-bolsas-compra 1.png"/> 
                         <div class="action-buttons">
                             <button id="shop">Go to store!</button>
                             <button id="create-account">Create free account</button>
                         </div>
                     </div>
+
+                    <img src="/src/resources/jpg/mujerBolsas.png"> 
                 </div>
             `;
 

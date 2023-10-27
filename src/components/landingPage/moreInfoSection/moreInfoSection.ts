@@ -17,10 +17,10 @@ export class MoreInfoSection extends HTMLElement {
             link.setAttribute("href", "/src/components/landingPage/moreInfoSection/moreInfoSection.css")
             this.shadowRoot.innerHTML = `
                 <div class="more-info-container">
+                <img src="/src/resources/jpg/chicaRubia.png" />
                     <div class="more-info-content">
-                        <h2>A close feeling!</h2>
-                        <p>The strong feeling of control and closeness of yout city in the comoddity of yout house. Take the trends of your shopping with a transparent advertaiment of products and clean sellers.</p>
-                        <img src="/src/resources/jpg/hermosa-chica-rubia-cierra-ojos-sonriendo-sonando-rezando-o-pidiendo-deseos-anticipando-algo-hermoso-sonando-despierto-pie-contra-fondo-blanco-camiseta 1.png" /> 
+                        <h1>A close feeling!</h1>
+                        <p>The strong feeling of control and closeness of yout city in the comoddity of yout house. Take the trends of your shopping with a transparent advertaiment of products and clean sellers.</p> 
                         <button id="read-more">Know more...</button>
                     </div>
                 </div>

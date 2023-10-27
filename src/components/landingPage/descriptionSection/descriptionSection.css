@@ -1,54 +1,82 @@
 .description-container {
-    background-color: white; /* color de fondo */
-    padding: 15%; /* espaciado interno */
+    background-color: #F7F4F3; /* color de fondo */
     color: #F24333; /* color del texto */
     font-family: Arial, sans-serif; /* tipo de fuente */
     border-radius: 5px; /* esquinas redondeadas */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
     text-align: center; /* alinea el texto al centro originalmente */
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .description-content {
+    display: flex;
+    flex-direction: column;
     max-width: 800px; /* ancho máximo para el contenido */
-    margin: auto; /* centra el contenido */
     text-align: left; /* Alinea el texto a la izquierda */
+    position: relative;
+    top: -11%;
+    margin: 0 0 0 6%;
 }
 
 .description-content h1 {
-    margin-bottom: 20px; /* espacio debajo del encabezado */
+    color: #F24333;
+    font-family: REM;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
 }
 
 .description-content p {
-    margin-bottom: 20px; /* espacio debajo del párrafo */
     color: #564D4A;
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
-.description-content img {
-    max-width: 80%; /* asegura que la imagen no exceda el ancho del contenedor */
+.description-container img {
+    max-width: 35%; /* asegura que la imagen no exceda el ancho del contenedor */
     height: auto; /* mantiene la proporción de aspecto */
-    margin-bottom: 20px; /* espacio debajo de la imagen */
-    margin-left: 70%; /* mueve la imagen hacia la derecha */
-    float: right; /* Alinea la imagen a la derecha */
+    position: relative;
+    top: 20%;
+    left: -5%;
 }
 
 .action-buttons {
     display: flex; /* usa flexbox para alinear los botones */
-    justify-content: center; /* centra los botones originalmente, se puede ajustar si necesario */
     gap: 10px; /* espacio entre los botones */
+    margin: 4% 0 0 0;
 }
 
 .action-buttons #shop {
-    background-color: #F7F4F3;
-    color: #564D4A;
-    border: 2px solid #564D4A; 
+    border: 3px solid #564D4A; 
     border-radius: 30px; /* Bordes redondeados para los botones */
+
+    color: #564D4A;
+    font-family: REM;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .action-buttons #create-account {
     background-color: #F24333; 
-    color: #F7F4F3; 
-    border: 2px solid #F7F4F3; 
     border-radius: 30px; /* Bordes redondeados para los botones */
+
+    color: #F7F4F3;
+    font-family: REM;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
 
 .action-buttons #shop:hover {
