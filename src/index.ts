@@ -24,6 +24,10 @@ class AppContainer extends HTMLElement {
                     this.shadowRoot.appendChild(landingPage)
                     document.body.classList.add("landingPage")
                     break;
+                case Screens.signUp:
+                    const signUp = this.ownerDocument.createElement("sign-up")
+                    this.shadowRoot.appendChild(signUp)
+                    break;
                 case Screens.mainPage:
                     const mainPage = this.ownerDocument.createElement("main-page")
                     this.shadowRoot.appendChild(mainPage)

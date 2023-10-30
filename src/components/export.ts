@@ -1,7 +1,3 @@
-//import "src/components/export"
-
-import { NavBarLanding } from './navBar/navBarLandingPage/navBarLanding'
-
 export const directorioExport = () => {
 
 }
@@ -27,3 +23,7 @@ export { NavBar } from './navBar/navBar'
 export { NavIconButton } from './navBar/navIconButton/navIconButton'
 export { NavSearchBar } from './navBar/navSearchBar/navSearchBar'
 export { NavBarLanding } from './navBar/navBarLandingPage/navBarLanding'
+export { NavBarEmpty } from './navBar/navBarEmpty/navBarEmpty'
+
+//SignUp
+export { SignUp } from '../pages/signUp/signUp'

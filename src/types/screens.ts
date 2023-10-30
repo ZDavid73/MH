@@ -1,4 +1,5 @@
 export enum Screens {
     "landingPage" = "landingPage",
-    "mainPage" = "mainPage"
+    "mainPage" = "mainPage",
+    "signUp" = "signUp"
 }
