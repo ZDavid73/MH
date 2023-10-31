@@ -1,4 +1,4 @@
-import {default as CustomInput} from './input/input'
+import "../export"
 
 export class loginregister extends HTMLElement {
     constructor() {
@@ -14,7 +14,7 @@ export class loginregister extends HTMLElement {
         if (this.shadowRoot) {
             const link = this.ownerDocument.createElement("link");
             link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "./src/components/loginRe/loginRe.css");
+            link.setAttribute("href", "/src/components/loginRe/loginRe.css");
             this.shadowRoot.appendChild(link);
 
             const mainContainer = this.ownerDocument.createElement("section");
@@ -29,13 +29,13 @@ export class loginregister extends HTMLElement {
             subTitle.textContent = "Enter the market";
             mainContainer.appendChild(subTitle);
 
-            const emailInput = this.ownerDocument.createElement('custom-input') as CustomInput;
+            const emailInput = this.ownerDocument.createElement('custom-input');
 emailInput.setAttribute('type', 'email');
 emailInput.setAttribute('placeholder', 'Email');
 emailInput.setAttribute('image', './src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
 mainContainer.appendChild(emailInput);
 
-const passwordInput = this.ownerDocument.createElement('custom-input') as CustomInput;
+const passwordInput = this.ownerDocument.createElement('custom-input');
 passwordInput.setAttribute('type', 'password');
 passwordInput.setAttribute('placeholder', 'Password');
 passwordInput.setAttribute('image', './src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');

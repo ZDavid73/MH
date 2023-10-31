@@ -1,6 +1,6 @@
 import "../../components/export";
 
-export class LoginPage extends HTMLElement {
+export class loginPage extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
@@ -14,7 +14,7 @@ export class LoginPage extends HTMLElement {
         if (this.shadowRoot) {
             const link = this.ownerDocument.createElement("link");
             link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "./src/pages/loginPage/loginPage.css");
+            link.setAttribute("href", "/src/pages/loginPage/loginPage.css");
             this.shadowRoot.appendChild(link);
 
             const mainContainer = this.ownerDocument.createElement("section");
@@ -22,13 +22,16 @@ export class LoginPage extends HTMLElement {
             this.shadowRoot.appendChild(mainContainer);
 
             const navBarEmpty = this.ownerDocument.createElement('navbar-empty');
-            mainContainer.appendChild(navBarEmpty);
-
             const loginregister = this.ownerDocument.createElement('login-register');
+
+            mainContainer.appendChild(navBarEmpty);
             mainContainer.appendChild(loginregister);
+
+
+
 
            }
         }
     }
 
-customElements.define("login-page", LoginPage);
+customElements.define("login-page", loginPage);

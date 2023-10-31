@@ -30,3 +30,4 @@ export { SignUp } from '../pages/signUp/signUp'
 
 //login
 export { loginregister} from './loginRe/loginRe'
+export {CustomInput} from './loginRe/input/input'

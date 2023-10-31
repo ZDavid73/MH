@@ -1,4 +1,4 @@
-export default class CustomInput extends HTMLElement {
+export class CustomInput extends HTMLElement {
     constructor() {
         super();
         this.attachShadow({ mode: "open" });
