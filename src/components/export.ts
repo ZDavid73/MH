@@ -27,3 +27,6 @@ export { NavBarEmpty } from './navBar/navBarEmpty/navBarEmpty'
 
 //SignUp
 export { SignUp } from '../pages/signUp/signUp'
+
+//login
+export { loginregister} from './loginRe/loginRe'
