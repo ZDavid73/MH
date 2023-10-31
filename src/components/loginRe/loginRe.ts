@@ -1,3 +1,5 @@
+import {default as CustomInput} from './input/input'
+
 export class loginregister extends HTMLElement {
     constructor() {
         super();
@@ -19,9 +21,6 @@ export class loginregister extends HTMLElement {
             mainContainer.setAttribute("id", "MarketHubLogin");
             this.shadowRoot.appendChild(mainContainer);
 
-            const navBarEmpty = this.ownerDocument.createElement('navbar-empty');
-            mainContainer.appendChild(navBarEmpty);
-
             const title = this.ownerDocument.createElement("h1");
             title.textContent = "MarketHub";
             mainContainer.appendChild(title);
@@ -30,15 +29,18 @@ export class loginregister extends HTMLElement {
             subTitle.textContent = "Enter the market";
             mainContainer.appendChild(subTitle);
 
-            const emailInput = this.ownerDocument.createElement("input");
-            emailInput.setAttribute("type", "email");
-            emailInput.setAttribute("placeholder", "Email");
-            mainContainer.appendChild(emailInput);
+            const emailInput = this.ownerDocument.createElement('custom-input') as CustomInput;
+emailInput.setAttribute('type', 'email');
+emailInput.setAttribute('placeholder', 'Email');
+emailInput.setAttribute('image', './src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
+mainContainer.appendChild(emailInput);
 
-            const passwordInput = this.ownerDocument.createElement("input");
-            passwordInput.setAttribute("type", "password");
-            passwordInput.setAttribute("placeholder", "Password");
-            mainContainer.appendChild(passwordInput);
+const passwordInput = this.ownerDocument.createElement('custom-input') as CustomInput;
+passwordInput.setAttribute('type', 'password');
+passwordInput.setAttribute('placeholder', 'Password');
+passwordInput.setAttribute('image', './src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
+mainContainer.appendChild(passwordInput);
+
 
             const loginButton = this.ownerDocument.createElement("button");
             loginButton.textContent = "LOG IN";
