@@ -30,16 +30,16 @@ export class loginregister extends HTMLElement {
             mainContainer.appendChild(subTitle);
 
             const emailInput = this.ownerDocument.createElement('custom-input');
-emailInput.setAttribute('type', 'email');
-emailInput.setAttribute('placeholder', 'Email');
-emailInput.setAttribute('image', './src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
-mainContainer.appendChild(emailInput);
+            emailInput.setAttribute('type', 'email');
+            emailInput.setAttribute('placeholder', 'Email');
+            emailInput.setAttribute('image', './src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
+            mainContainer.appendChild(emailInput);
 
-const passwordInput = this.ownerDocument.createElement('custom-input');
-passwordInput.setAttribute('type', 'password');
-passwordInput.setAttribute('placeholder', 'Password');
-passwordInput.setAttribute('image', './src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
-mainContainer.appendChild(passwordInput);
+            const passwordInput = this.ownerDocument.createElement('custom-input');
+            passwordInput.setAttribute('type', 'password');
+            passwordInput.setAttribute('placeholder', 'Password');
+            passwordInput.setAttribute('image', './src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
+            mainContainer.appendChild(passwordInput);
 
 
             const loginButton = this.ownerDocument.createElement("button");
