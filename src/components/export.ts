@@ -5,7 +5,7 @@ export const directorioExport = () => {
 //Main Page
 export { MainPage } from './mainPage/mainPage'
 export { AdvertisingSection } from './mainPage/advertisingSection/advertisingSection'
-export { advertisingSectionAd} from './mainPage/advertisingSection/advertisingSectionAd/advertisingSectionAd'
+export { advertisingSectionAd } from './mainPage/advertisingSection/advertisingSectionAd/advertisingSectionAd'
 export { CategoriesSection } from './mainPage/categoriesSection/categoriesSection'
 export { CategoriesSectionCard } from './mainPage/categoriesSection/categoriesSectionCard/categoriesSectionCard'
 export { RecommendedSection } from './mainPage/recommendedSection/recommendedSection'
@@ -32,5 +32,5 @@ export { SignUpInput } from './signUp/signUpInput/signUpInput'
 
 //login
 export { loginPage } from '../pages/loginPage/loginPage'
-export { loginregister} from './loginRe/loginRe'
-export {CustomInput} from './loginRe/input/input'
+export { loginregister } from './loginRe/loginRe'
+export { CustomInput } from './loginRe/input/input'
