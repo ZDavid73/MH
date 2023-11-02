@@ -1,0 +1,81 @@
+#MarketHubLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #F7F4F3; /* Light beige background for the main container */
+}
+
+.central-box {
+    background-color: #F24333; /* Red background for inner box */
+    border-radius: 15px; /* Rounded corners for the box */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#MarketHubLogin h1 {
+    color: #F7F4F3; /* Color for the title */
+    font-weight: bold;
+    font-size: 32px; /* Increased font size for the title */
+}
+
+#MarketHubLogin h2 {
+    color: #5F2122; /* Dark reddish-brown color for the subtitle */
+    font-weight: lighter;
+}
+
+#MarketHubLogin button {
+    background-color: #564D4A; /* Dark gray for button */
+    color: #F7F4F3; /* Light beige for button text */
+    border: none;
+    border-radius: 15px; /* Rounded corners for button */
+    padding: 15px 32px;
+    width: 90%; /* Match the input width */
+    margin: 15px 0; /* Increased margin for better spacing */
+    cursor: pointer;
+}
+
+#MarketHubLogin a {
+    color: #EED5C7; /* Lighter reddish-brown for links */
+    text-decoration: none;
+    position: fixed;
+    margin-top: 27%;
+}
+
+#MarketHubLogin a:hover {
+    text-decoration: underline;
+}
+
+#MarketHubLogin a:last-of-type {
+    color: #564D4A; /* Dark gray for the sign-up link */
+}
+
+#MarketHubLogin .sign-up-link {
+    color: #564D4A; /* Dark gray for the sign-up link */
+    text-decoration: none;
+    margin-top: 35%; /* Add space between the box and the link */
+    position: fixed;
+}
+
+#MarketHubLogin .sign-up-link:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    .central-box {
+        max-width: 90%; /* Allow more space on smaller screens */
+    }
+
+    #MarketHubLogin custom-input,
+    #MarketHubLogin button {
+        width: 95%;
+    }
+}
+
+
