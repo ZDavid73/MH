@@ -3,94 +3,111 @@
     src: url(/src/resources/fonts/REM/REM-VariableFont_wght.ttf);
 }
 
-#navbar {
-    background-color: #F24333; /* Color de fondo de la barra */
-    position: fixed; /* Hace que la barra sea estática y siempre visible */
-    width: 100%; /* Asegura que la barra se extienda a lo ancho de la página */
-    top: 0; /* Asegura que la barra se mantenga en la parte superior */
-    left: 0; /* Alinea la barra con el lado izquierdo de la página */
-    z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
-    padding: 10px 0; /* Espaciado interno para la barra */
-    display: flex; /* Utiliza Flexbox para alinear los elementos de la barra */
-    /* justify-content: space-between; Separa los elementos a ambos extremos */
-    align-items: center; /* Centra los elementos verticalmente */
-    font-family: REM;
-    height: 8%;
-    box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.801);
+@media (max-width: 1600px) {
+    #navbar {
+        background-color: #F24333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+        font-family: REM;
+        height: 8%;
+        box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.801);
+    }
+
+    #navbar img {
+        height: 75%;
+        margin: 0 20px 0 50px;
+    }
+
+    .horizontalSpace {
+        width: 100%;
+    }
+
+    /* Contenedor para el logo */
+    #navbar .logo-container {
+        display: flex;
+        /* Usa Flexbox */
+        align-items: center;
+        /* Alineación vertical */
+    }
+
+    /* Estilos para ambos botones */
+    #navbar button {
+        margin: 0 10px;
+        /* Espaciado externo para los botones */
+        padding: 10px 20px;
+        /* Espaciado interno para los botones */
+        border-radius: 30px;
+        /* Bordes redondeados para los botones */
+        font-size: 16px;
+        /* Tamaño del texto de los botones */
+        cursor: pointer;
+        /* Cambia el cursor al pasar sobre los botones */
+        transition: background-color 0.3s ease;
+        /* Transición suave para el color de fondo */
+    }
+
+    /* Contenedor para los botones */
+    #navbar .button-container {
+        display: flex;
+        /* Usa Flexbox */
+        align-items: center;
+        /* Alineación vertical */
+        margin: 0 50px 0 0;
+        width: fit-content;
+    }
+
+    /* Estilos específicos para el botón 'sign-up' */
+    #navbar #sign-up {
+        background-color: #F7F4F3;
+        /* Color de fondo */
+        color: #F24333;
+        /* Color del texto */
+        border: 2px solid #F7F4F3;
+        /* Borde del botón */
+        white-space: nowrap;
+
+        font-family: REM;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* Estilos específicos para el botón 'login' */
+    #navbar #login {
+        background-color: #F24333;
+        /* Color de fondo */
+        color: #F7F4F3;
+        /* Color del texto */
+        border: 2px solid #F7F4F3;
+        /* Borde del botón */
+        white-space: nowrap;
+
+        font-family: REM;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    /* Cambia el color del botón 'sign-up' al pasar el cursor */
+    #navbar #sign-up:hover {
+        background-color: #F24333;
+        color: #F7F4F3;
+        border: 2px solid #F7F4F3;
+    }
+
+    /* Cambia el color del botón 'login' al pasar el cursor */
+    #navbar #login:hover {
+        background-color: #F7F4F3;
+        color: #F24333;
+        border: 2px solid #F7F4F3;
+    }
+
 }
-
-#navbar img {
-    height: 75%;
-    margin: 0 20px 0 50px;
-}
-
-.horizontalSpace {
-    width: 100%;
-}
-
-/* Contenedor para el logo */
-#navbar .logo-container {
-    display: flex; /* Usa Flexbox */
-    align-items: center; /* Alineación vertical */
-}
-
-/* Estilos para ambos botones */
-#navbar button {
-    margin: 0 10px; /* Espaciado externo para los botones */
-    padding: 10px 20px; /* Espaciado interno para los botones */
-    border-radius: 30px; /* Bordes redondeados para los botones */
-    font-size: 16px; /* Tamaño del texto de los botones */
-    cursor: pointer; /* Cambia el cursor al pasar sobre los botones */
-    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
-}
-
-/* Contenedor para los botones */
-#navbar .button-container {
-    display: flex; /* Usa Flexbox */
-    align-items: center; /* Alineación vertical */
-    margin: 0 50px 0 0;
-    width: fit-content;
-}
-
-/* Estilos específicos para el botón 'sign-up' */
-#navbar #sign-up {
-    background-color: #F7F4F3; /* Color de fondo */
-    color: #F24333; /* Color del texto */
-    border: 2px solid #F7F4F3; /* Borde del botón */
-    white-space: nowrap;
-
-    font-family: REM;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-/* Estilos específicos para el botón 'login' */
-#navbar #login {
-    background-color: #F24333; /* Color de fondo */
-    color: #F7F4F3; /* Color del texto */
-    border: 2px solid #F7F4F3; /* Borde del botón */
-    white-space: nowrap;
-
-    font-family: REM;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-/* Cambia el color del botón 'sign-up' al pasar el cursor */
-#navbar #sign-up:hover {
-    background-color: #F24333;
-    color: #F7F4F3;
-    border: 2px solid #F7F4F3;
-}
-
-/* Cambia el color del botón 'login' al pasar el cursor */
-#navbar #login:hover {
-    background-color: #F7F4F3;
-    color: #F24333;
-    border: 2px solid #F7F4F3;
-}
-

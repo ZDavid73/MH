@@ -21,9 +21,12 @@ export { LandingFooter } from './landingPage/landingFooter/landingFooter'
 //Navbar
 export { NavBar } from './navBar/navBar'
 export { NavIconButton } from './navBar/navIconButton/navIconButton'
-export { NavSearchBar } from './navBar/navSearchBar/navSearchBar'
+export { NavSearchBarRed } from './navBar/navSearchBarRed/navSearchBarRed'
+export { NavSearchBarWhite } from './navBar/navSearchBarWhite/navSearchBarWhite'
 export { NavBarLanding } from './navBar/navBarLandingPage/navBarLanding'
 export { NavBarEmpty } from './navBar/navBarEmpty/navBarEmpty'
+export { NavBarRed } from './navBar/navBarRed/navBarRed'
+export { NavBarWhite } from './navBar/navBarWhite/navBarWhite'
 
 //SignUp
 export { SignUp } from '../pages/signUp/signUp'

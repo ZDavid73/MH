@@ -6,7 +6,7 @@ console.log(queryString)
 const params = new URLSearchParams(queryString)
 console.log(params.get("search"))
 
-export class NavSearchBar extends HTMLElement {
+export class NavSearchBarRed extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -31,13 +31,13 @@ export class NavSearchBar extends HTMLElement {
     render() {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
-        link.setAttribute("href", "/src/components/navBar/navSearchBar/navSearchBar.css")
+        link.setAttribute("href", "/src/components/navBar/navSearchBarRed/navSearchBarRed.css")
 
         const searchBarContainer = this.ownerDocument.createElement("div")
         searchBarContainer.setAttribute("id", "navSearchBar")
         const searchLogo = this.ownerDocument.createElement("img")
         searchLogo.setAttribute("id" , "navSearchLogo")
-        searchLogo.setAttribute("src" , "/src/resources/svg/search_icon.svg")
+        searchLogo.setAttribute("src" , "/src/resources/svg/navIcons/searchDark.svg")
         const searchInput = this.ownerDocument.createElement("input")
         searchInput.setAttribute("id", "searchInputNav")
         searchInput.setAttribute("placeholder", "Find what you want!")
@@ -50,4 +50,4 @@ export class NavSearchBar extends HTMLElement {
     }
 }
 
-customElements.define("nav-searchbar", NavSearchBar)
+customElements.define("navsearchbar-red", NavSearchBarRed)

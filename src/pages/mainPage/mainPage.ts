@@ -15,15 +15,18 @@ export class MainPage extends HTMLElement {
             const link = this.ownerDocument.createElement("link")
             link.setAttribute("rel", "stylesheet")
             link.setAttribute("href", "/src/appContainer.css")
-            const navBar = this.ownerDocument.createElement("nav-bar")
-            const categoriesSection = this.ownerDocument.createElement("categories-section")
-            const advertisingSection = this.ownerDocument.createElement("advertising-section")
-            const recommendedSection = this.ownerDocument.createElement("recommended-section")
-
             this.shadowRoot.appendChild(link)
+
+            const navBar = this.ownerDocument.createElement("navbar-white")
             this.shadowRoot.appendChild(navBar)
+
+            const categoriesSection = this.ownerDocument.createElement("categories-section")
             this.shadowRoot.appendChild(categoriesSection)
+
+            const advertisingSection = this.ownerDocument.createElement("advertising-section")
             this.shadowRoot.appendChild(advertisingSection)
+
+            const recommendedSection = this.ownerDocument.createElement("recommended-section")
             this.shadowRoot.appendChild(recommendedSection)
         }
 
