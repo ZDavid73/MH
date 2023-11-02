@@ -1,0 +1,22 @@
+@media (max-width: 1600px) {
+    #SignUp {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-image: url(/src//resources//svg/fondoOlas.svg);
+        background-size: cover;
+        background-position-y: -34px;
+    }
+    
+    signup-menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+

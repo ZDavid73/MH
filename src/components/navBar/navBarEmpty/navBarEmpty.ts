@@ -17,7 +17,7 @@ export class NavBarEmpty extends HTMLElement {
         if (this.shadowRoot) {
             const link = document.createElement("link");
             link.setAttribute("rel", "stylesheet");
-            link.setAttribute("href", "/src/components/navBar/navBarLandingPage/navBarLanding.css");
+            link.setAttribute("href", "/src/components/navBar/navBarEmpty/navBarEmpty.css");
             this.shadowRoot.appendChild(link);
 
             const navContainer = this.ownerDocument.createElement("div")

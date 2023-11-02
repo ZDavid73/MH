@@ -22,8 +22,10 @@ export class SignUp extends HTMLElement {
             this.shadowRoot.appendChild(mainContainer)
 
             const navBarEmpty = this.ownerDocument.createElement('navbar-empty');
-
             mainContainer.appendChild(navBarEmpty);
+
+            const signUpMenu = this.ownerDocument.createElement("signup-menu")
+            mainContainer.appendChild(signUpMenu)
         }
     }
 }
