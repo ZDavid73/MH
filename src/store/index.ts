@@ -5,7 +5,7 @@ import { reducer } from "./reducer";
 const observers: Observer[] = [];
 
 export let state: AppState = {
-screen: Screens.logIn
+screen: Screens.signUp
 };
 
 export const dispatch = (action: Action) => {
