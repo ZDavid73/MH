@@ -1,3 +1,5 @@
+import "../export";
+
 export class loginregister extends HTMLElement {
     constructor() {
         super();
@@ -21,6 +23,8 @@ export class loginregister extends HTMLElement {
 
             const centralBox = this.ownerDocument.createElement("div");
             centralBox.classList.add("central-box");
+            // Append centralBox to mainContainer
+            mainContainer.appendChild(centralBox);
 
             const title = this.ownerDocument.createElement("h1");
             title.textContent = "MarketHub";
@@ -30,14 +34,14 @@ export class loginregister extends HTMLElement {
             subTitle.textContent = "Enter the market";
             centralBox.appendChild(subTitle);
 
-            const emailInput = this.ownerDocument.createElement('custom-input');
+            const emailInput = this.ownerDocument.createElement('signup-input');
             emailInput.setAttribute('placeholder', 'Email');
-            emailInput.setAttribute('image', '/src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
+            emailInput.setAttribute('icon', '/src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
             centralBox.appendChild(emailInput);
 
-            const passwordInput = this.ownerDocument.createElement('custom-input');
+            const passwordInput = this.ownerDocument.createElement('signup-input');
             passwordInput.setAttribute('placeholder', 'Password');
-            passwordInput.setAttribute('image', '/src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
+            passwordInput.setAttribute('icon', '/src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
             centralBox.appendChild(passwordInput);
 
 
@@ -46,19 +50,18 @@ export class loginregister extends HTMLElement {
             centralBox.appendChild(loginButton);
 
             const forgotPasswordLink = this.ownerDocument.createElement("a");
-forgotPasswordLink.textContent = "Forgot your password?";
-forgotPasswordLink.setAttribute("href", "#");
-forgotPasswordLink.classList.add("forgot-password"); // Assign class for styling
-mainContainer.appendChild(forgotPasswordLink);
+            forgotPasswordLink.textContent = "Forgot your password?";
+            forgotPasswordLink.setAttribute("href", "#");
+            forgotPasswordLink.classList.add("forgot-password"); // Assign class for styling
+            centralBox.appendChild(forgotPasswordLink);
 
             const signUpLink = this.ownerDocument.createElement("a");
-        signUpLink.classList.add("sign-up-link");
-        signUpLink.textContent = "Don’t have an account? Create one";
-        signUpLink.setAttribute("href", "#");
-        mainContainer.appendChild(signUpLink);
+            signUpLink.classList.add("sign-up-link");
+            signUpLink.textContent = "Don’t have an account? Create one";
+            signUpLink.setAttribute("href", "#");
+            mainContainer.appendChild(signUpLink);
 
-            // Append centralBox to mainContainer
-            mainContainer.appendChild(centralBox);
+            
         }
     }
 }

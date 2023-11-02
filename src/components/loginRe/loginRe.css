@@ -1,81 +1,119 @@
-#MarketHubLogin {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #F7F4F3; /* Light beige background for the main container */
-}
+@media (max-width: 1600px) {
 
-.central-box {
-    background-color: #F24333; /* Red background for inner box */
-    border-radius: 15px; /* Rounded corners for the box */
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 500px;
-    width: 100%;
-    box-sizing: border-box;
-}
+    #MarketHubLogin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background-color: #F7F4F3;
+        /* Light beige background for the main container */
+        background-image: url(/src//resources//svg/fondoOlas.svg);
+        background-size: cover;
+        background-position-y: 30px;
+    }
 
-#MarketHubLogin h1 {
-    color: #F7F4F3; /* Color for the title */
-    font-weight: bold;
-    font-size: 32px; /* Increased font size for the title */
-}
+    .central-box {
+        background-color: #F24333;
+        /* Red background for inner box */
+        border-radius: 15px;
+        /* Rounded corners for the box */
+        padding: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        box-sizing: border-box;
+        box-shadow: 0px 4px 20px 10px rgba(0, 0, 0, 0.25);
+    }
 
-#MarketHubLogin h2 {
-    color: #5F2122; /* Dark reddish-brown color for the subtitle */
-    font-weight: lighter;
-}
+    #MarketHubLogin h1 {
+        color: #F7F4F3;
+        font-family: REM;
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0;
+    }
 
-#MarketHubLogin button {
-    background-color: #564D4A; /* Dark gray for button */
-    color: #F7F4F3; /* Light beige for button text */
-    border: none;
-    border-radius: 15px; /* Rounded corners for button */
-    padding: 15px 32px;
-    width: 90%; /* Match the input width */
-    margin: 15px 0; /* Increased margin for better spacing */
-    cursor: pointer;
-}
+    #MarketHubLogin h2 {
+        color: #5F2122;
+        text-align: center;
+        font-family: REM;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0 0 20px 0;
+    }
 
-#MarketHubLogin a {
-    color: #EED5C7; /* Lighter reddish-brown for links */
-    text-decoration: none;
-    position: fixed;
-    margin-top: 27%;
-}
+    #MarketHubLogin button {
+        color: #F7F4F3;
+        text-align: center;
+        font-family: REM;
+        font-size: 26px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
 
-#MarketHubLogin a:hover {
-    text-decoration: underline;
-}
+        border-radius: 12px;
+        background: #564D4A;
+        border: none;
+        width: 100%;
+        height: 55px;
+        margin: 20px 0 0 0;
+    }
 
-#MarketHubLogin a:last-of-type {
-    color: #564D4A; /* Dark gray for the sign-up link */
-}
+    #MarketHubLogin a {
+        text-decoration: none;
+    }
 
-#MarketHubLogin .sign-up-link {
-    color: #564D4A; /* Dark gray for the sign-up link */
-    text-decoration: none;
-    margin-top: 35%; /* Add space between the box and the link */
-    position: fixed;
-}
+    #MarketHubLogin .forgot-password {
+        color: var(--Secondary, #EED5C7);
+        font-family: REM;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        width: 100%;
+        text-align: left;
+        margin: 15px 0 0 0;
+    }
 
-#MarketHubLogin .sign-up-link:hover {
-    text-decoration: underline;
+    #MarketHubLogin a:hover {
+        text-decoration: underline;
+    }
+
+    #MarketHubLogin .sign-up-link {
+        text-decoration: none;
+        color: #564D4A;
+        font-family: REM;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 15px 0 0 0;
+    }
+
+    #MarketHubLogin .sign-up-link:hover {
+        text-decoration: underline;
+    }
+
+    signup-input {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
     .central-box {
-        max-width: 90%; /* Allow more space on smaller screens */
+        max-width: 90%;
+        /* Allow more space on smaller screens */
     }
 
     #MarketHubLogin custom-input,
     #MarketHubLogin button {
         width: 95%;
     }
+
 }
-
-
