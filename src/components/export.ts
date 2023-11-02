@@ -3,7 +3,7 @@ export const directorioExport = () => {
 }
 
 //Main Page
-export { MainPage } from './mainPage/mainPage'
+export { MainPage } from '../pages/mainPage/mainPage'
 export { AdvertisingSection } from './mainPage/advertisingSection/advertisingSection'
 export { advertisingSectionAd } from './mainPage/advertisingSection/advertisingSectionAd/advertisingSectionAd'
 export { CategoriesSection } from './mainPage/categoriesSection/categoriesSection'
@@ -34,3 +34,7 @@ export { SignUpInput } from './signUp/signUpInput/signUpInput'
 export { loginPage } from '../pages/loginPage/loginPage'
 export { loginregister } from './loginRe/loginRe'
 export { CustomInput } from './loginRe/input/input'
+
+//Forgot Password
+export { forgotPasswordPage } from '../pages/forgotPassword/forgotPassword'
+export { forgotPasswordMenu } from './forgotPassword/forgotPasswordMenu/forgotPasswordMenu'

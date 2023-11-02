@@ -36,6 +36,10 @@ class AppContainer extends HTMLElement {
                     const logInPage = this.ownerDocument.createElement("login-page")
                     this.shadowRoot.appendChild(logInPage)
                     break;
+                case Screens.forgotPassword:
+                    const forgotPasswordPage = this.ownerDocument.createElement("forgotpassword-page")
+                    this.shadowRoot.appendChild(forgotPasswordPage)
+                    break;
                 default:
                     break;
             }
