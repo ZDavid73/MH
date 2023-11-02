@@ -30,5 +30,6 @@ export { SignUp } from '../pages/signUp/signUp'
 export { SignUpMenu } from './signUp/signUpMenu/signUpMenu'
 
 //login
+export { loginPage } from '../pages/loginPage/loginPage'
 export { loginregister} from './loginRe/loginRe'
 export {CustomInput} from './loginRe/input/input'
