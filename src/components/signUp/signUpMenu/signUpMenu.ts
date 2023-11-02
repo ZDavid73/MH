@@ -20,6 +20,19 @@ export class SignUpMenu extends HTMLElement {
             const menuContainer = this.ownerDocument.createElement("div")
             menuContainer.setAttribute("id", "menuSignUp")
             this.shadowRoot.appendChild(menuContainer)
+
+            const title = this.ownerDocument.createElement("h1")
+            title.innerHTML = "MarketHub"
+            menuContainer.appendChild(title)
+
+            const subTitle = this.ownerDocument.createElement("h2")
+            subTitle.innerHTML = "Register to start shopping!"
+            menuContainer.appendChild(subTitle)
+
+            const createAccountButton = this.ownerDocument.createElement("button")
+            createAccountButton.innerHTML = "CREATE ACCOUNT"
+            menuContainer.appendChild(createAccountButton)
+
         }
     }
 }
