@@ -52,6 +52,11 @@
         background: #564D4A;
         border: none;
         width: 100%;
-        height: 9%;
+        height: 55px;
+    }
+
+    signup-input{
+        width: 100%;
+        height: 100%;
     }
 }

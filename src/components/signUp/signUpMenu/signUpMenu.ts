@@ -29,6 +29,11 @@ export class SignUpMenu extends HTMLElement {
             subTitle.innerHTML = "Register to start shopping!"
             menuContainer.appendChild(subTitle)
 
+            const nameInput = this.ownerDocument.createElement("signup-input")
+            nameInput.setAttribute("icon", "/src/resources/svg/Icons/User.svg")
+            nameInput.setAttribute("placeholder", "Name")
+            menuContainer.appendChild(nameInput)
+
             const createAccountButton = this.ownerDocument.createElement("button")
             createAccountButton.innerHTML = "CREATE ACCOUNT"
             menuContainer.appendChild(createAccountButton)
