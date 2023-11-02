@@ -1,4 +1,4 @@
-import "../export"
+import "../../components/export"
 
 export class MainPage extends HTMLElement {
     constructor() {
