@@ -28,3 +28,7 @@ export { NavBarEmpty } from './navBar/navBarEmpty/navBarEmpty'
 //SignUp
 export { SignUp } from '../pages/signUp/signUp'
 export { SignUpMenu } from './signUp/signUpMenu/signUpMenu'
+
+//login
+export { loginregister} from './loginRe/loginRe'
+export {CustomInput} from './loginRe/input/input'
