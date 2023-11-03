@@ -10,7 +10,7 @@
     top: 0; /* Asegura que la barra se mantenga en la parte superior */
     left: 0; /* Alinea la barra con el lado izquierdo de la página */
     z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
-    padding: 10px 0; /* Espaciado interno para la barra */
+    padding: 5px 0 5px 0;; /* Espaciado interno para la barra */
     display: flex; /* Utiliza Flexbox para alinear los elementos de la barra */
     /* justify-content: space-between; Separa los elementos a ambos extremos */
     align-items: center; /* Centra los elementos verticalmente */

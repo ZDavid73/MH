@@ -13,4 +13,5 @@ export enum Actions {
 
 export interface AppState {
   screen: Screens | string
+  searchText: string
 }
