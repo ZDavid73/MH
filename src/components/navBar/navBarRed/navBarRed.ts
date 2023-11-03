@@ -1,3 +1,6 @@
+import { dispatch } from "../../../store";
+import { changeScreen } from "../../../store/actions";
+import { Screens } from "../../../types/screens";
 import "../../export";
 
 export class NavBarRed extends HTMLElement {
@@ -56,7 +59,13 @@ export class NavBarRed extends HTMLElement {
             const rightSpace = this.ownerDocument.createElement("div")
             rightSpace.classList.add("rightSpace")
             navContainer.appendChild(rightSpace)
-            
+
+            logo.addEventListener("click", () => {
+                dispatch(
+                    changeScreen(Screens.mainPage)
+                )
+            })
+
         }
     }
 }

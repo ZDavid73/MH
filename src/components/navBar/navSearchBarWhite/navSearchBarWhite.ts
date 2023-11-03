@@ -1,3 +1,6 @@
+import { dispatch } from "../../../store"
+import { changeScreen, changeSeaarchText } from "../../../store/actions"
+import { Screens } from "../../../types/screens"
 import "../../export"
 
 const queryString = window.location.search
@@ -19,22 +22,33 @@ export class NavSearchBarWhite extends HTMLElement {
     render() {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
-        link.setAttribute("href", "/src/components/navBar/navSearchBarWhite/navSearchBarWhite.css")
+        link.setAttribute("href", "/src/components/navBar/navSearchBarRed/navSearchBarRed.css")
+        this.shadowRoot?.appendChild(link)
 
         const searchBarContainer = this.ownerDocument.createElement("div")
         searchBarContainer.setAttribute("id", "navSearchBar")
+        this.shadowRoot?.appendChild(searchBarContainer)
+
         const searchLogo = this.ownerDocument.createElement("img")
-        searchLogo.setAttribute("id" , "navSearchLogo")
-        searchLogo.setAttribute("src" , "/src/resources/svg/navIcons/searchLight.svg")
+        searchLogo.setAttribute("id", "navSearchLogo")
+        searchBarContainer.appendChild(searchLogo)
+
+        searchLogo.setAttribute("src", "/src/resources/svg/navIcons/searchDark.svg")
         const searchInput = this.ownerDocument.createElement("input")
+
         searchInput.setAttribute("id", "searchInputNav")
         searchInput.setAttribute("placeholder", "Find what you want!")
-
-        searchBarContainer.appendChild(searchLogo)
         searchBarContainer.appendChild(searchInput)
 
-        this.shadowRoot?.appendChild(link)
-        this.shadowRoot?.appendChild(searchBarContainer)
+        searchLogo.addEventListener("click", () => {
+            dispatch(
+                changeSeaarchText(searchInput.value)
+            )
+
+            dispatch(
+                changeScreen(Screens.searchPage)
+            )
+        })
     }
 }
 
