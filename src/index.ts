@@ -44,6 +44,10 @@ class AppContainer extends HTMLElement {
                     const searchPage = this.ownerDocument.createElement("search-page")
                     this.shadowRoot.appendChild(searchPage)
                     break;
+                case Screens.shopingList:
+                    const shopingList = this.ownerDocument.createElement("shoping-list")
+                    this.shadowRoot.appendChild(shopingList)
+                    break;
                 default:
                     break;
             }

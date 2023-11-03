@@ -1,0 +1,60 @@
+@media (max-width: 1600px) {
+    #shopingList {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #F7F4F3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #shoopingListSubContaainer {
+        width: 93%;
+        min-height: 100vh;
+        border: 2px solid mediumslateblue;
+        margin: 100px 0 0 0;
+        display: flex;
+    }
+
+    #shoopingListCardContainer {
+        width: 75%;
+        min-height: 100vh;
+        border: 2px solid darkblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px 0 0;
+    }
+
+    #cardsListTitle {
+        width: 100%;
+        background-color: #F24333;
+        border-radius: 20px;
+    }
+
+    #cardsListTitle h1 {
+        color: #F7F4F3;
+        font-family: REM;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        margin: 15px;
+    }
+
+    #shoopingListSummary {
+        width: 25%;
+        min-height: 100vh;
+        border: 2px solid rgb(0, 139, 14);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    shopinglist-card{
+        width: 100%;
+    }
+}

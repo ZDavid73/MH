@@ -4,5 +4,6 @@ export enum Screens {
     "signUp" = "signUp",
     "logIn" = "logIn",
     "forgotPassword" = "forgotPassword",
-    "searchPage" = "searchPage"
+    "searchPage" = "searchPage",
+    "shopingList" = "shopingList"
 }

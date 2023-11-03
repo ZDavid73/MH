@@ -48,3 +48,7 @@ export { SearchPage } from '../pages/searchPage/searchPage'
 export { optionsInformation } from './searchPage/optionsInformation/optionsInformation'
 export { SearchOption } from './searchPage/optionsInformation/searchOption/searchOption'
 export { searchResultsCard } from './searchPage/searchResultsCard/searchResultsCard'
+
+//Shooping List
+export { ShopingList } from '../pages/shopingList/shopingList'
+export { ShopingListCard } from './shoopingPage/shopingListCard/shopingListCard'
