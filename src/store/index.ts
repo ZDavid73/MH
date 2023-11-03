@@ -5,7 +5,8 @@ import { reducer } from "./reducer";
 const observers: Observer[] = [];
 
 export let state: AppState = {
-screen: Screens.mainPage
+    screen: Screens.shopingList,
+    searchText: ""
 };
 
 export const dispatch = (action: Action) => {

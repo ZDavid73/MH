@@ -7,7 +7,11 @@ export const reducer = (action: Action, currentState: AppState): AppState => {
         ...currentState,
         screen: action.payload
       };
-
+    case Actions.CHANGE_SEARCH_TEXT:
+      return {
+        ...currentState,
+        searchText: action.payload
+      };
     default:
       return currentState;
   }

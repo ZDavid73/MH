@@ -36,5 +36,20 @@ export { SignUpInput } from './signUp/signUpInput/signUpInput'
 
 //login
 export { loginPage } from '../pages/loginPage/loginPage'
-export { loginregister} from './loginRe/loginRe'
-export {CustomInput} from './loginRe/input/input'
+export { loginregister } from './loginRe/loginRe'
+export { CustomInput } from './loginRe/input/input'
+
+//Forgot Password
+export { forgotPasswordPage } from '../pages/forgotPassword/forgotPassword'
+export { forgotPasswordMenu } from './forgotPassword/forgotPasswordMenu/forgotPasswordMenu'
+
+//Search Page
+export { SearchPage } from '../pages/searchPage/searchPage'
+export { optionsInformation } from './searchPage/optionsInformation/optionsInformation'
+export { SearchOption } from './searchPage/optionsInformation/searchOption/searchOption'
+export { searchResultsCard } from './searchPage/searchResultsCard/searchResultsCard'
+
+//Shooping List
+export { ShopingList } from '../pages/shopingList/shopingList'
+export { ShopingListCard } from './shoopingPage/shopingListCard/shopingListCard'
+export { PurchaseSummary } from './shoopingPage/purchaseSummary/purchaseSummary'

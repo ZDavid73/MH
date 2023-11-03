@@ -7,7 +7,7 @@ h1, h2, h3, h4, p {
 }
 
 #optionTitle {
-    color: #5C5470;
+    color: #F7F4F3;
     font-family: REM;
     font-size: 20px;
     font-style: normal;
@@ -23,7 +23,7 @@ h1, h2, h3, h4, p {
 }
 
 #optionSelectorContainer {
-    color: #5C5470;
+    color: #F7F4F3;
     font-family: REM;
     font-size: 20px;
     font-style: normal;
@@ -32,14 +32,17 @@ h1, h2, h3, h4, p {
 }
 #optionSelectorContainer select {
     width: 100%;
-    background-color: transparent;
+    background-color: #F7F4F3;
     border: none;
-    color: #5C5470;
+    color: #F24333;
     font-family: REM;
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    border-radius: 5px;
+    margin: 10px 0 0 0;
+    padding: 2px;
     
 }
 

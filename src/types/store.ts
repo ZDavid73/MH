@@ -8,9 +8,11 @@ export interface Action {
 }
 
 export enum Actions {
-  "CHANGE_SCREEN" = "CHANGE_SCREEN"
+  "CHANGE_SCREEN" = "CHANGE_SCREEN",
+  "CHANGE_SEARCH_TEXT" = "CHANGE_SEARCH_TEXT"
 }
 
 export interface AppState {
   screen: Screens | string
+  searchText: string
 }

@@ -1,6 +1,6 @@
 import "./searchOption/searchOption"
 
-class optionsInformation extends HTMLElement {
+export class optionsInformation extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({mode: "open"})
@@ -38,5 +38,3 @@ class optionsInformation extends HTMLElement {
 }
 
 customElements.define("options-information", optionsInformation)
-
-export default optionsInformation
