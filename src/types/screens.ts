@@ -5,5 +5,13 @@ export enum Screens {
     "logIn" = "logIn",
     "forgotPassword" = "forgotPassword",
     "searchPage" = "searchPage",
-    "shopingList" = "shopingList"
+    "shopingList" = "shopingList",
+    "productDetail" = "productDetail"
+}
+
+export interface product {
+    img: string,
+    title: string,
+    price: string,
+    description: string
 }

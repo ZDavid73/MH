@@ -49,6 +49,11 @@ export { optionsInformation } from './searchPage/optionsInformation/optionsInfor
 export { SearchOption } from './searchPage/optionsInformation/searchOption/searchOption'
 export { searchResultsCard } from './searchPage/searchResultsCard/searchResultsCard'
 
+//Product detail
+export {ProductDetail} from '../pages/productDetail/productDetail'
+export { ProductDetailCard } from './productdetailcomp/productdetailcard/productdetailcard'
+export {ProductDetailComments} from './productdetailcomp/productdetailcomment/productdetailcomment'
+
 //Shooping List
 export { ShopingList } from '../pages/shopingList/shopingList'
 export { ShopingListCard } from './shoopingPage/shopingListCard/shopingListCard'

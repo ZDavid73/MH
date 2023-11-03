@@ -1,3 +1,7 @@
+import { dispatch } from "../../../store";
+import { changeScreen, changeViewProduct } from "../../../store/actions";
+import { Screens } from "../../../types/screens";
+
 const enum searchResultsCardProperties {
     img = "img",
     title = "title",
@@ -81,6 +85,15 @@ export class searchResultsCard extends HTMLElement {
         const infoDesc = this.ownerDocument.createElement("p")
         infoDesc.innerHTML = `${this.properties.desc}`
         productInfoContainer.appendChild(infoDesc)
+
+        cardContainer.addEventListener("click", () => {
+            dispatch(
+                changeViewProduct(this.properties.title)
+            )
+            dispatch(
+                changeScreen(Screens.productDetail)
+            )
+        })
     }
 }
 
