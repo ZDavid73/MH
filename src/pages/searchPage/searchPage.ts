@@ -45,7 +45,7 @@ export class SearchPage extends HTMLElement {
             const optionsInformation = this.ownerDocument.createElement("options-information")
             optionsContainer.appendChild(optionsInformation)
 
-            dataGeneral.search.map((product) => {
+            dataGeneral.recommended.map((product) => {
                 if (product.title.toLowerCase().includes(state.searchText!)) {
                     const productResultCard = this.ownerDocument.createElement("search_results-card")
                     productResultCard.setAttribute("img", `${product.img}`)
