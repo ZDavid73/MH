@@ -1,0 +1,16 @@
+@media (max-width: 1600px) {
+    #salesSectionContainer {
+        width: 100%;
+        margin: 40px 25px 0 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    sales-card{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

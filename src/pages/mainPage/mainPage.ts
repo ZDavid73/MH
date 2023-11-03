@@ -30,8 +30,11 @@ export class MainPage extends HTMLElement {
             const newsSection = this.ownerDocument.createElement("news-section")
             mainContainer.appendChild(newsSection)
 
-            // const recommendedSection = this.ownerDocument.createElement("recommended-section")
-            // mainContainer.appendChild(recommendedSection)
+            const salesSection = this.ownerDocument.createElement("sales-section")
+            mainContainer.appendChild(salesSection)
+
+            const recommendedSection = this.ownerDocument.createElement("recommended-section")
+            mainContainer.appendChild(recommendedSection)
         }
 
     }

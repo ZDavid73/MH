@@ -4,7 +4,7 @@ import { dataGeneral } from "../../../../data"
 export class RecommendedSection extends HTMLElement {
     constructor() {
         super()
-        this.attachShadow({mode: "open"})
+        this.attachShadow({ mode: "open" })
     }
 
     connectedCallback() {
@@ -14,7 +14,7 @@ export class RecommendedSection extends HTMLElement {
     render() {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
-        link.setAttribute("href", "/src/components/recommendedSection/recommendedSection.css")
+        link.setAttribute("href", "/src/components/mainPage/recommendedSection/recommendedSection.css")
         //Creation of father
         const recommendedContainer = this.ownerDocument.createElement("section")
         recommendedContainer.setAttribute("id", "recommendedContainer")
@@ -26,14 +26,22 @@ export class RecommendedSection extends HTMLElement {
         //Append childs of recommendedContainer
         recommendedContainer.appendChild(title)
         recommendedContainer.appendChild(recommendedCardsContainer)
-        dataGeneral.recommended.map( (element) => {
+        dataGeneral.recommended.map((element) => {
             const card = this.ownerDocument.createElement("recommended_section-card")
             card.setAttribute("img", `${element.img}`)
             card.setAttribute("title", `${element.title}`)
             card.setAttribute("price", `${element.price}`)
             card.setAttribute("description", `${element.description}`)
-            recommendedCardsContainer.appendChild(card) 
-        } )
+            recommendedCardsContainer.appendChild(card)
+        })
+        dataGeneral.recommended.map((element) => {
+            const card = this.ownerDocument.createElement("recommended_section-card")
+            card.setAttribute("img", `${element.img}`)
+            card.setAttribute("title", `${element.title}`)
+            card.setAttribute("price", `${element.price}`)
+            card.setAttribute("description", `${element.description}`)
+            recommendedCardsContainer.appendChild(card)
+        })
         //Append childs of this.shadowRoot
         this.shadowRoot?.appendChild(link)
         this.shadowRoot?.appendChild(recommendedContainer)

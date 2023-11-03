@@ -15,7 +15,7 @@ export class recommendedSectionCard extends HTMLElement {
         price: "",
         description: ""
     }
-    
+
     static get observedAttributes() {
         const properties: Record<recommendedSectionCardProperties, null> = {
             img: null,
@@ -23,12 +23,12 @@ export class recommendedSectionCard extends HTMLElement {
             price: null,
             description: null
         }
-        return Object.keys(properties); 
+        return Object.keys(properties);
     }
-    
+
     constructor() {
         super()
-        this.attachShadow({mode: "open"})
+        this.attachShadow({ mode: "open" })
     }
 
     attributeChangedCallback(propName: recommendedSectionCardProperties, oldValue: string, newValue: string) {
@@ -57,34 +57,37 @@ export class recommendedSectionCard extends HTMLElement {
     render() {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
-        link.setAttribute("href", "/src/components/recommendedSection/recommendedSectionCard/recommendedSectionCard.css")
-        //Creation of father
+        link.setAttribute("href", "/src/components/mainPage/recommendedSection/recommendedSectionCard/recommendedSectionCard.css")
+        this.shadowRoot?.appendChild(link)
+
         const cardContainer = this.ownerDocument.createElement("div")
         cardContainer.classList.add("recommendCardContainer")
-        //Creation of childs
+        this.shadowRoot?.appendChild(cardContainer)
+        
         const cardImageContainer = this.ownerDocument.createElement("div")
         cardImageContainer.classList.add("cardImageContainer")
-        const cardImage = this.ownerDocument.createElement("img")
+        cardContainer.appendChild(cardImageContainer)
+        
+        const cardImage = this.ownerDocument.createElement("div")
         cardImage.classList.add("cardImage")
-        cardImage.setAttribute("src", `${this.properties.img}`)
+        cardImage.style.backgroundImage = `url(${this.properties.img})`
+        cardImageContainer.appendChild(cardImage)
+        
         const textContainer = this.ownerDocument.createElement("div")
         textContainer.classList.add("textContainer")
+        cardContainer.appendChild(textContainer)
+        
         const title = this.ownerDocument.createElement("h2")
         title.innerHTML = `${this.properties.title}`
+        textContainer.appendChild(title)
+
         const priceText = this.ownerDocument.createElement("h3")
         priceText.innerHTML = `${this.properties.price}`
+        textContainer.appendChild(priceText)
+
         const descriptionText = this.ownerDocument.createElement("p")
         descriptionText.innerHTML = `${this.properties.description}`
-        //Append childs of cardContainer
-        cardImageContainer.appendChild(cardImage)
-        cardContainer.appendChild(cardImageContainer)
-        textContainer.appendChild(title)
-        textContainer.appendChild(priceText)
         textContainer.appendChild(descriptionText)
-        cardContainer.appendChild(textContainer)
-        //Append childs of this.shadowRoot
-        this.shadowRoot?.appendChild(link)
-        this.shadowRoot?.appendChild(cardContainer)
     }
 }
 

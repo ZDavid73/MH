@@ -1,7 +1,7 @@
 export const dataGeneral = {
     recommended: [
         {
-            img: "https://img.freepik.com/free-vector/realistic-white-plate-isolated_1284-41743.jpg?w=2000",
+            img: "/src/resources/jpg/platesRecommended.jpg",
             title: "Plates",
             price: "Cop $23500",
             description: "Set of 2 ceramics plates"

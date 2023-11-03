@@ -9,6 +9,8 @@ export { categoriesButton } from './mainPage/categoriesSection/categoriesButton/
 export { newsSection } from './mainPage/newSection/newSection'
 export { RecommendedSection } from './mainPage/recommendedSection/recommendedSection'
 export { recommendedSectionCard } from './mainPage/recommendedSection/recommendedSectionCard/recommendedSectionCard'
+export { salesSection } from './mainPage/salesSection/salesSection'
+export { SalesCard } from './mainPage/salesSection/salesCard/salesCard'
 
 //Landing Page
 export { LandingPage } from '../pages/landingPage/landingPage'
