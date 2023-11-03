@@ -27,6 +27,12 @@ export class NavBarEmpty extends HTMLElement {
             const logo = this.ownerDocument.createElement("img")
             logo.setAttribute("src", "/src/resources/svg/logo_light_new.svg")
             navContainer.appendChild(logo)
+
+            logo.addEventListener("click", () => {
+                dispatch(
+                    changeScreen(Screens.landingPage)
+                )
+            })
         }
     }
 }

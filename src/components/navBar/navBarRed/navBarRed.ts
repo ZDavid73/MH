@@ -54,6 +54,7 @@ export class NavBarRed extends HTMLElement {
             const menuButton = this.ownerDocument.createElement("img")
             menuButton.classList.add("navIcon")
             menuButton.setAttribute("src", "/src/resources/svg/navIcons/light/menuLight.svg")
+            menuButton.setAttribute("screen", Screens.landingPage)
             navContainer.appendChild(menuButton)
 
             const rightSpace = this.ownerDocument.createElement("div")
@@ -68,7 +69,6 @@ export class NavBarRed extends HTMLElement {
                     changeScreen(Screens.mainPage)
                 )
             })
-
         }
     }
 }
