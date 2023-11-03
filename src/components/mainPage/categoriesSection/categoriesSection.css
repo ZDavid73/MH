@@ -1,0 +1,10 @@
+@media (max-width: 1600px) {
+    #sectionsContainer {
+        width: 94%;
+        height: 55px;
+        background-color: #F24333;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+    }
+}

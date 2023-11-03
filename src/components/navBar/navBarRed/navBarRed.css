@@ -1,0 +1,41 @@
+@font-face {
+    font-family: REM;
+    src: url(/src/resources/fonts/REM/REM-VariableFont_wght.ttf);
+}
+
+@media (max-width: 1600px) {
+    #navbar {
+        background-color: #F24333;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        padding: 5px 0 5px 0;
+        display: flex;
+        align-items: center;
+        font-family: REM;
+        height: 8%;
+        box-shadow: -1px 2px 20px 0px rgba(0, 0, 0, 0.801);
+    }
+
+    #navbar img {
+        height: 75%;
+    }
+
+    #logo {
+        margin: 0 70px 0 50px;
+    }
+
+    .navIcon {
+        margin: 0 7px 0 7px;
+    }
+
+    .horizontalSpace {
+        width: 100%;
+    }
+
+    .rightSpace {
+        margin: 0 50px 0 0;
+    }
+}

@@ -1,0 +1,29 @@
+.input-container {
+    display: flex;
+    align-items: center;
+    color: #564D4A; /* Texto del input */
+    background-color: #F7F4F3; /* Fondo del input */
+    border: 2px solid #564D4A; /* Borde del input */
+    border-radius: 15px; /* Esquinas redondeadas */
+    padding: 13px;
+    width: 150%; /* Ancho relativo al padre */
+    margin: 15px 0; /* Espaciado vertical */
+    margin-left: -30%;
+
+}
+
+/* Estilos para el input */
+.input-container input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* Estilos para la imagen dentro del input */
+.input-container img {
+    margin-right: 10px;
+    height: 20px; /* Ajusta esto según tu diseño */
+}

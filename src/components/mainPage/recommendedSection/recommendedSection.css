@@ -1,0 +1,23 @@
+#recommendedContainer {
+    width: 100%;
+    max-width: 94%;
+    margin: 30px 25px 50px 25px;
+}
+
+H2 {
+    color: #F24333;
+    font-size: 20px;
+}
+
+.recommendedCardsContainer{
+    display: flex;
+    overflow-y: scroll;
+}
+
+.recommendedCardsContainer::-webkit-scrollbar {
+    display: none;
+}
+
+recommended_section-card {
+    margin: 0 20px 0 0;
+}

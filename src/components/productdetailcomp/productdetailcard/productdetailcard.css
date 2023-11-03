@@ -1,0 +1,129 @@
+.card-container {
+    display: flex;
+    flex-direction: row; /* Los elementos hijo se alinean en fila */
+    height: 500px;
+    background-color: #F7F4F3;
+    border-radius: 25px;
+}
+
+/* Estilos para el contenedor de la imagen */
+.image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 30px;
+}
+
+/* Imagen del producto */
+.image-container > img {
+    width: 100%;
+}
+
+/* Estilos para el contenedor del contenido */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;;
+    width: 500px;
+}
+
+/* Título del producto */
+.content-container > h1 {
+    color: #F24333; /* Color rojo para el título */
+    text-align: flex-start; /* Centrar texto */
+    margin: 10px 0; /* Espaciado arriba y abajo */
+    margin-top: -1%;
+    font-size: 28px;
+}
+
+/* Precio del producto */
+.content-container > h2 {
+    color: #564D4A; /* Color gris para el precio */
+    text-align: center; /* Centrar texto */
+    margin-top: -1%; /* Espaciado debajo del precio */
+    font-size: 20px;
+}
+
+/* Contenedor de valoración */
+.rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -5%; /* Espaciado debajo del contenedor de valoración */
+}
+
+
+/* Valoración numérica */
+.rating-container > h3 {
+    margin-left: 8px; /* Espaciado a la izquierda de la valoración numérica */
+    color: #564D4A; /* Color gris para la valoración numérica */
+}
+
+/* Título de descripción */
+.content-container > h3 {
+    text-align: center; /* Centrar texto */
+    margin-bottom: 5px; /* Espaciado debajo del título de descripción */
+    color: #564D4A; /* Color gris para el texto de descripción */
+}
+
+/* Texto de descripción */
+.content-container > p {
+    color: #564D4A; /* Color gris para el texto de descripción */
+    margin-top: -1%;
+    margin-right: 1%;
+    
+}
+
+/* Botones */
+.content-container > button {
+    padding: 10px;
+    margin: 5px; /* Margen alrededor de los botones */
+    border: none;
+    cursor: pointer;
+    border-radius: 40px; /* Bordes redondeados para los botones */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    text-align: center; /* Centrar texto */
+    font-size: larger;
+    width: 80%;
+}
+
+/* 'Purchase now' button */
+.content-container > button:nth-of-type(1) {
+    color: #F7F4F3; /* Color de texto blanco apagado */
+    background-color: #F24333; /* Color de fondo rojo */
+    margin-bottom: 10px; /* Espaciado debajo del botón */
+    color: var(--Ligth, #F7F4F3);
+    text-align: center;
+    font-family: REM;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* 'Add to cart' button */
+.content-container > button:nth-of-type(2) {
+    color: #F24333; /* Color de texto rojo */
+    background-color: #F7F4F3; /* Color de fondo blanco apagado */
+    border: 3px solid var(--Primary-1, #F24333);
+    color: var(--Primary-1, #F24333);
+    text-align: center;
+    font-family: REM;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Efectos de hover para los botones */
+.content-container > button:hover {
+    background-color: #e03e2d; /* Sombra más oscura al pasar el mouse */
+    color: #F7F4F3;
+}

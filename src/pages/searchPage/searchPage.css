@@ -1,0 +1,46 @@
+@media (max-width: 1600px) {
+    #searchPage {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: row;
+        padding-top: 50px;
+        background-color: #F7F4F3;
+
+    }
+
+    #mainSearchContainer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 50px;
+    }
+
+    #optionsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #optionsContainer h2 {
+        color: #F24333;
+        font-family: REM;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 0 0 20px 0;
+    }
+
+    #resultsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 0 0 0 30px;
+        width: 71%;
+    }
+
+    search_results-card{
+        width: 100%;
+    }
+}

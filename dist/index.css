@@ -5,23 +5,14 @@
 
 body {
     margin: 0;
-    background-color: #352F44;
     font-family: REM;
     overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-    display: none;
+.landingPage {
+    background-color: #F24333;
 }
 
-@media (max-width: 420px) {
-    body {
-        margin: 0;
-        background-color: #352F44;
-        font-family: REM;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
+body::-webkit-scrollbar {
+    display: none;
 }

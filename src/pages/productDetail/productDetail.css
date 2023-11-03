@@ -1,0 +1,33 @@
+#ProductDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 1%;
+    width: 100%; /* You might want to set this to 100% to fill the page */
+}
+
+.comments-container {
+    width: 70%; /* Adjust width as needed */
+    margin-top: 1%; /* Spacing between elements */
+    background: #ffffff;
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    border-radius: 30px;
+}
+
+.card-detail-container{
+    width: 70%; /* Adjust width as needed */
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    border-radius: 30px;
+    margin-top: 5%; /* Spacing between elements */
+
+
+}
+
+
+product-detailcard, product-comments {
+    width: 90%; /* Adjust width as needed */
+    border: none;
+        padding: 1%;
+}

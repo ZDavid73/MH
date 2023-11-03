@@ -1,0 +1,46 @@
+.more-info-containertwo {
+    background-color: #F7F4F3; /* color de fondo */
+    color: #F24333; /* color del texto */
+    font-family: REM; /* tipo de fuente */
+    border-radius: 5px; /* esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra sutil */
+    overflow: hidden; /* previene que los hijos desborden el contenedor */
+    height: 110%;
+    position: relative;
+    top: -23%;
+    display: flex;
+}
+
+.more-info-content {
+    text-align: start;
+    position: relative;
+    top: 20%;
+    margin: 0 0 0 10%;
+}
+
+.more-info-containertwo h2 {
+    color: #F24333;
+    font-family: REM;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.more-info-containertwo p {
+    color: var(--Dark, #564D4A);
+    font-family: REM;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    max-width: 70%;
+}
+
+.more-info-containertwo img {
+    position: relative;
+    top: 12%;
+    left: -15%;
+    max-height: 80%;
+}

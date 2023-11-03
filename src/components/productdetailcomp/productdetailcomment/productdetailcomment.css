@@ -1,0 +1,38 @@
+.comments-container {
+    font-family: Arial, sans-serif; /* Choose your preferred font */
+    margin-left: 2%;
+  }
+  
+  .comments-container h1 {
+    color: #564D4A; /* Sets the color for 'Questions and Answers' */
+    margin-bottom: 16px; /* Add some spacing below the title */
+  }
+  
+  .comments-container img {
+    width: 48px; /* Set your desired image size */
+    height: auto;
+    vertical-align: middle; /* Aligns the image vertically with adjacent text */
+    margin-right: 10px; /* Spacing between the image and the text */
+  }
+  
+  .comments-container p {
+    color: #564D4A; /* Sets the color for the questions and answers */
+    margin-left: 5%; /* Indent text to align under the text next to the image */
+    margin-top: 1%;
+  }
+  
+  .question {
+    display: flex;
+    align-items: center; /* Aligns the items vertically in the center */
+    margin-top: 5px; /* Spacing between question and answer */
+  }
+  
+  .question p {
+    margin-left: 0; /* Reset margin for the question */
+    margin-top: 5%;
+  }
+  
+  .answer {
+    margin-bottom: 5%; /* Spacing after the answer */
+  }
+  

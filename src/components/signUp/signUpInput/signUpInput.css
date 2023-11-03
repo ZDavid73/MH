@@ -1,0 +1,42 @@
+@media (max-width: 1600px) {
+    .inputSignUp {
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background: #F7F4F3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3px 0 3px 0;
+        margin: 8px 0 8px 0;
+
+    }
+
+    .inputSignUp img {
+        height: 90%;
+        margin: 0 5px 0 5px;
+    }
+
+    .inputSignUp input {
+        width: 100%;
+        height: 90%;
+        margin-right: 10px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+
+        color: var(--Dark, #564D4A);
+        font-family: REM;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .inputSignUp input::placeholder {
+        font-size: 18px;
+        position: relative;
+        top: 1px;
+    }
+
+}

@@ -6,7 +6,7 @@ const enum SearchOptionProperties {
     opt2 = "opt2"
 }
 
-class SearchOption extends HTMLElement {
+export class SearchOption extends HTMLElement {
     properties: Record<SearchOptionProperties, string> = {
         title: "",
         desc: "",
@@ -96,5 +96,3 @@ class SearchOption extends HTMLElement {
 }
 
 customElements.define("search--option", SearchOption)
-
-export default SearchOption

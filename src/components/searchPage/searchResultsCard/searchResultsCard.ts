@@ -1,3 +1,7 @@
+import { dispatch } from "../../../store";
+import { changeScreen, changeViewProduct } from "../../../store/actions";
+import { Screens } from "../../../types/screens";
+
 const enum searchResultsCardProperties {
     img = "img",
     title = "title",
@@ -5,14 +9,14 @@ const enum searchResultsCardProperties {
     desc = "desc"
 }
 
-class searchResultsCard extends HTMLElement {
+export class searchResultsCard extends HTMLElement {
     properties: Record<searchResultsCardProperties, string> = {
         img: "",
         title: "",
         price: "",
         desc: ""
     }
-    
+
     static get observedAttributes() {
         const properties: Record<searchResultsCardProperties, null> = {
             img: null,
@@ -20,12 +24,12 @@ class searchResultsCard extends HTMLElement {
             price: null,
             desc: null
         }
-        return Object.keys(properties); 
+        return Object.keys(properties);
     }
 
     constructor() {
         super()
-        this.attachShadow({mode: "open"})
+        this.attachShadow({ mode: "open" })
     }
 
     attributeChangedCallback(propName: searchResultsCardProperties, oldValue: string, newValue: string) {
@@ -55,39 +59,42 @@ class searchResultsCard extends HTMLElement {
         const link = this.ownerDocument.createElement("link")
         link.setAttribute("rel", "stylesheet")
         link.setAttribute("href", "/src/components/searchPage/searchResultsCard/searchResultsCard.css")
-        //Creation of main container
+        this.shadowRoot?.appendChild(link)
+
         const cardContainer = this.ownerDocument.createElement("div")
         cardContainer.classList.add("cardResultCotainer")
-            //Creation of cardContainer elements
-            const productImgContainer = this.ownerDocument.createElement("div")
-            productImgContainer.classList.add("productImgContainer")
-            const productInfoContainer = this.ownerDocument.createElement("div")
-            productInfoContainer.classList.add("productInfoContainer")
-                //Creation of productImgContainer elements
-                const productImg = this.ownerDocument.createElement("img")
-                productImg.setAttribute("src", `${this.properties.img}`)
-                //Adding children of productImgContainer
-                productImgContainer.appendChild(productImg)
-                //Creation of productInfoContainer elements
-                const infoTitle = this.ownerDocument.createElement("h2")
-                infoTitle.innerHTML = `${this.properties.title}`
-                const infoPrice = this.ownerDocument.createElement("h3")
-                infoPrice.innerHTML = `${this.properties.price}`
-                const infoDesc = this.ownerDocument.createElement("p")
-                infoDesc.innerHTML = `${this.properties.desc}`
-                //Adding children of productInfoContainer
-                productInfoContainer.appendChild(infoTitle)
-                productInfoContainer.appendChild(infoPrice)
-                productInfoContainer.appendChild(infoDesc)
-        //Adding childs of cardContainer
-        cardContainer.appendChild(productImgContainer) 
-        cardContainer.appendChild(productInfoContainer)
-        //Adding childs of this.shadowRoot
-        this.shadowRoot?.appendChild(link)
         this.shadowRoot?.appendChild(cardContainer)
+
+        const productImgContainer = this.ownerDocument.createElement("div")
+        productImgContainer.classList.add("productImgContainer")
+        productImgContainer.style.backgroundImage = `url(${this.properties.img})`
+        cardContainer.appendChild(productImgContainer)
+
+        const productInfoContainer = this.ownerDocument.createElement("div")
+        productInfoContainer.classList.add("productInfoContainer")
+        cardContainer.appendChild(productInfoContainer)
+
+        const infoTitle = this.ownerDocument.createElement("h2")
+        infoTitle.innerHTML = `${this.properties.title}`
+        productInfoContainer.appendChild(infoTitle)
+
+        const infoPrice = this.ownerDocument.createElement("h3")
+        infoPrice.innerHTML = `${this.properties.price}`
+        productInfoContainer.appendChild(infoPrice)
+
+        const infoDesc = this.ownerDocument.createElement("p")
+        infoDesc.innerHTML = `${this.properties.desc}`
+        productInfoContainer.appendChild(infoDesc)
+
+        cardContainer.addEventListener("click", () => {
+            dispatch(
+                changeViewProduct(this.properties.title)
+            )
+            dispatch(
+                changeScreen(Screens.productDetail)
+            )
+        })
     }
 }
 
 customElements.define("search_results-card", searchResultsCard)
-
-export default searchResultsCard

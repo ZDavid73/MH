@@ -1,0 +1,12 @@
+@media (max-width: 1600px) {
+    #landingPage {
+        height: 100vh;
+        background-color: #F7F4F3;
+    }
+
+    landing-footer {
+        position: relative;
+        top: -25%;
+        z-index: 10;
+    }
+}
