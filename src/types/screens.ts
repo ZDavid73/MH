@@ -8,3 +8,10 @@ export enum Screens {
     "shopingList" = "shopingList",
     "productDetail" = "productDetail"
 }
+
+export interface product {
+    img: string,
+    title: string,
+    price: string,
+    description: string
+}
