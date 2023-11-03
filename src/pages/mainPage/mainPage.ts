@@ -14,17 +14,27 @@ export class MainPage extends HTMLElement {
         if (this.shadowRoot != null || this.shadowRoot != undefined) {
             const link = this.ownerDocument.createElement("link")
             link.setAttribute("rel", "stylesheet")
-            link.setAttribute("href", "/src/appContainer.css")
-            const navBar = this.ownerDocument.createElement("nav-bar")
-            const categoriesSection = this.ownerDocument.createElement("categories-section")
-            const advertisingSection = this.ownerDocument.createElement("advertising-section")
-            const recommendedSection = this.ownerDocument.createElement("recommended-section")
-
+            link.setAttribute("href", "/src/pages/mainPage/mainPage.css")
             this.shadowRoot.appendChild(link)
-            this.shadowRoot.appendChild(navBar)
-            this.shadowRoot.appendChild(categoriesSection)
-            this.shadowRoot.appendChild(advertisingSection)
-            this.shadowRoot.appendChild(recommendedSection)
+
+            const mainContainer = this.ownerDocument.createElement("section");
+            mainContainer.setAttribute("id", "mainPage");
+            this.shadowRoot.appendChild(mainContainer);
+
+            const navBar = this.ownerDocument.createElement("navbar-red")
+            mainContainer.appendChild(navBar)
+
+            const categoriesSection = this.ownerDocument.createElement("categories-section")
+            mainContainer.appendChild(categoriesSection)
+
+            const newsSection = this.ownerDocument.createElement("news-section")
+            mainContainer.appendChild(newsSection)
+
+            const salesSection = this.ownerDocument.createElement("sales-section")
+            mainContainer.appendChild(salesSection)
+
+            const recommendedSection = this.ownerDocument.createElement("recommended-section")
+            mainContainer.appendChild(recommendedSection)
         }
 
     }

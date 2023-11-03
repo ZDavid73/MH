@@ -1,0 +1,28 @@
+@media (max-width: 1600px) {
+    .saleCard {
+        width: 100%;
+        height: 250px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 25px 0 25px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .saleCard .subTitleContainer {
+        width: 100%;
+        background-color: #F24333;
+    }
+
+    .saleCard .subTitleContainer h3 {
+        color: #F7F4F3;
+        text-align: center;
+        font-family: REM;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin: 5px 0 5px 0;
+    }
+}

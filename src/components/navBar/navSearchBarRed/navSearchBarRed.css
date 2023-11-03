@@ -1,0 +1,48 @@
+@media (max-width: 1600px) {
+
+    #navSearchBar {
+        width: 500px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        background-color: #F7F4F3;
+        border-radius: 30px;
+    }
+
+    #navSearchLogo {
+        height: 38px;
+        margin: 0 0 0 10px;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 2px;
+        color: #F24333;
+        margin: 0 0 0 4px;
+
+        color: #F7F4F3;
+        font-family: REM;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input::placeholder {
+        color: #a09591;
+        font-size: 14px;
+        font-family: REM;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
