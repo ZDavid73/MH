@@ -14,20 +14,24 @@ export class MainPage extends HTMLElement {
         if (this.shadowRoot != null || this.shadowRoot != undefined) {
             const link = this.ownerDocument.createElement("link")
             link.setAttribute("rel", "stylesheet")
-            link.setAttribute("href", "/src/appContainer.css")
+            link.setAttribute("href", "/src/pages/mainPage/mainPage.css")
             this.shadowRoot.appendChild(link)
 
-            const navBar = this.ownerDocument.createElement("navbar-white")
-            this.shadowRoot.appendChild(navBar)
+            const mainContainer = this.ownerDocument.createElement("section");
+            mainContainer.setAttribute("id", "mainPage");
+            this.shadowRoot.appendChild(mainContainer);
+
+            const navBar = this.ownerDocument.createElement("navbar-red")
+            mainContainer.appendChild(navBar)
 
             const categoriesSection = this.ownerDocument.createElement("categories-section")
-            this.shadowRoot.appendChild(categoriesSection)
+            mainContainer.appendChild(categoriesSection)
 
-            const advertisingSection = this.ownerDocument.createElement("advertising-section")
-            this.shadowRoot.appendChild(advertisingSection)
+            const newsSection = this.ownerDocument.createElement("news-section")
+            mainContainer.appendChild(newsSection)
 
-            const recommendedSection = this.ownerDocument.createElement("recommended-section")
-            this.shadowRoot.appendChild(recommendedSection)
+            // const recommendedSection = this.ownerDocument.createElement("recommended-section")
+            // mainContainer.appendChild(recommendedSection)
         }
 
     }

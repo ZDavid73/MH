@@ -1,0 +1,16 @@
+@media (max-width: 1600px) {
+    button {
+        border-radius: 8px;
+        background-color: #F7F4F3;
+        color: #564D4A;
+        font-family: REM;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border: none;
+
+        height: 35px;
+        margin: 0 0 0 10px;
+    }
+}

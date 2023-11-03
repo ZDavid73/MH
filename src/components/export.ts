@@ -4,10 +4,9 @@ export const directorioExport = () => {
 
 //Main Page
 export { MainPage } from '../pages/mainPage/mainPage'
-export { AdvertisingSection } from './mainPage/advertisingSection/advertisingSection'
-export { advertisingSectionAd } from './mainPage/advertisingSection/advertisingSectionAd/advertisingSectionAd'
 export { CategoriesSection } from './mainPage/categoriesSection/categoriesSection'
-export { CategoriesSectionCard } from './mainPage/categoriesSection/categoriesSectionCard/categoriesSectionCard'
+export { categoriesButton } from './mainPage/categoriesSection/categoriesButton/categoriesButton'
+export { newsSection } from './mainPage/newSection/newSection'
 export { RecommendedSection } from './mainPage/recommendedSection/recommendedSection'
 export { recommendedSectionCard } from './mainPage/recommendedSection/recommendedSectionCard/recommendedSectionCard'
 
