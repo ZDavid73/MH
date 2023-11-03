@@ -1,5 +1,5 @@
 import { dispatch } from "../../../store";
-import { changeScreen } from "../../../store/actions";
+import { changeScreen, changeSeaarchText } from "../../../store/actions";
 import { Screens } from "../../../types/screens";
 import "../../export";
 
@@ -61,6 +61,9 @@ export class NavBarWhite extends HTMLElement {
             navContainer.appendChild(rightSpace)
 
             logo.addEventListener("click", () => {
+                dispatch(
+                    changeSeaarchText("prueba")
+                )
                 dispatch(
                     changeScreen(Screens.mainPage)
                 )

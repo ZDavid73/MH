@@ -1,4 +1,4 @@
-import { dispatch } from "../../../store"
+import { dispatch, state } from "../../../store"
 import { changeScreen, changeSeaarchText } from "../../../store/actions"
 import { Screens } from "../../../types/screens"
 import "../../export"
@@ -31,20 +31,19 @@ export class NavSearchBarWhite extends HTMLElement {
 
         const searchLogo = this.ownerDocument.createElement("img")
         searchLogo.setAttribute("id", "navSearchLogo")
-        searchBarContainer.appendChild(searchLogo)
-
         searchLogo.setAttribute("src", "/src/resources/svg/navIcons/searchDark.svg")
+        searchBarContainer.appendChild(searchLogo)
+        
         const searchInput = this.ownerDocument.createElement("input")
-
         searchInput.setAttribute("id", "searchInputNav")
         searchInput.setAttribute("placeholder", "Find what you want!")
+        searchInput.value = state.searchText
         searchBarContainer.appendChild(searchInput)
 
         searchLogo.addEventListener("click", () => {
             dispatch(
                 changeSeaarchText(searchInput.value)
             )
-
             dispatch(
                 changeScreen(Screens.searchPage)
             )
