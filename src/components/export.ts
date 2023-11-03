@@ -52,3 +52,4 @@ export { searchResultsCard } from './searchPage/searchResultsCard/searchResultsC
 //Shooping List
 export { ShopingList } from '../pages/shopingList/shopingList'
 export { ShopingListCard } from './shoopingPage/shopingListCard/shopingListCard'
+export { PurchaseSummary } from './shoopingPage/purchaseSummary/purchaseSummary'

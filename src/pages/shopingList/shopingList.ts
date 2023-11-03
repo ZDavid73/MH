@@ -57,6 +57,9 @@ export class ShopingList extends HTMLElement {
             const shoopingListSummary = this.ownerDocument.createElement("div")
             shoopingListSummary.setAttribute("id", "shoopingListSummary")
             shoopingList.appendChild(shoopingListSummary)
+
+            const purchaseSummary = this.ownerDocument.createElement("purchase-summary")
+            shoopingListSummary.appendChild(purchaseSummary)
         }
 
     }

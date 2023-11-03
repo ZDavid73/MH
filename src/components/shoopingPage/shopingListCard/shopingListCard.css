@@ -29,23 +29,24 @@
         margin: 0;
         color: var(--Ligth, #F7F4F3);
         font-family: REM;
-        font-size: 22px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
     }
 
     .cardTextContainer h3 {
-        margin: 0;
+        margin: 5px 0 0 0;
         color: var(--Primary-2, #5F2122);
         font-family: REM;
-        font-size: 16px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 600;
         line-height: normal;
     }
 
     .buttonContainer {
+        margin: 10px 0 0 0;
         width: 100%;
         display: flex;
     }
