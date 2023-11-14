@@ -1,0 +1,16 @@
+
+button {
+    background-color: #564D4A;
+    color: #F7F4F3;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 100%;
+    margin-left: 9%;
+    margin-top: 1%;
+}
+
+button:hover {
+    background-color: #463C39; 
+}

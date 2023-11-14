@@ -64,3 +64,8 @@ export { PurchasePage } from '../pages/purchase/purchasePage'
 export {PurchasePageSummary} from './purchasePage/purchasePage'
 export { paymentPurchaseSummary } from './purchasePage/payment/payment'
 export {SelectPaymentMethod}from './purchasePage/selectpaymentmethod/selectpaymentmethod'
+
+//UserPage
+export {UserProfile} from './userinfo/userProfile/userProfile'
+export {UserData} from './userinfo/userData/userData'
+export {UserPage } from '../pages/userPage/userPage'
