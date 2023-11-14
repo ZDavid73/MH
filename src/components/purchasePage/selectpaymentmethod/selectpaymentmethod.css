@@ -1,0 +1,42 @@
+:host {
+    display: block;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    color: #F24333;
+  }
+  
+  h2 {
+    color: #564D4A;
+  }
+  
+  select {
+    color: #F7F4F3;
+    background-color: #F24333;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    color: #564D4A;
+  }
+  
+  p span.price {
+    color: #F24333;
+  }
+  
+  button {
+    color: #F7F4F3;
+    background-color: #564D4A;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #463C3A;
+  }
+  

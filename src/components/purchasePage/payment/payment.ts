@@ -1,6 +1,6 @@
 import "../../export"
 
-export class PurchaseSummary extends HTMLElement {
+export class paymentPurchaseSummary extends HTMLElement {
     constructor() {
         super()
         this.attachShadow({ mode: "open" })
@@ -14,7 +14,7 @@ export class PurchaseSummary extends HTMLElement {
         if (this.shadowRoot) {
             const link = this.ownerDocument.createElement("link")
             link.setAttribute("rel", "stylesheet")
-            link.setAttribute("href", "/src/components/shoopingPage/purchaseSummary/purchaseSummary.css")
+            link.setAttribute("href", "/src/components/purchasePage/payment/payment.css")
             this.shadowRoot.appendChild(link)
 
             const summaryContainer = this.ownerDocument.createElement("div")
@@ -61,12 +61,9 @@ export class PurchaseSummary extends HTMLElement {
             totalCountPrice.innerText = "$87.823"
             detailsRight.appendChild(totalCountPrice)
 
-            const purchaseButton = this.ownerDocument.createElement("button")
-            purchaseButton.innerText = "PURCHASE"
-            summaryContainer.appendChild(purchaseButton)
         }
 
     }
 }
 
-customElements.define("purchase-summary", PurchaseSummary)
+customElements.define("paymentpurchase-summary", paymentPurchaseSummary)

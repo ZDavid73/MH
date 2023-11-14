@@ -62,7 +62,7 @@ export class NavBarWhite extends HTMLElement {
 
             logo.addEventListener("click", () => {
                 dispatch(
-                    changeSeaarchText("")
+                    changeSeaarchText("prueba")
                 )
                 dispatch(
                     changeScreen(Screens.mainPage)

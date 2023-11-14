@@ -1,8 +1,3 @@
-import "../../export";
-import { dataGeneral } from "../../../../data";
-import { state } from "../../../store";
-import { product } from "../../../types/screens";
-
 export class ProductDetailCard extends HTMLElement {
     constructor() {
         super();
@@ -21,22 +16,6 @@ export class ProductDetailCard extends HTMLElement {
             link.setAttribute("href", "/src/components/productdetailcomp/productdetailcard/productdetailcard.css");
             this.shadowRoot.appendChild(link);
 
-            let productToShow: product = {
-                img: "",
-                price: "",
-                title: "",
-                description: ""
-            }
-
-            dataGeneral.recommended.map((product) => {
-                if (product.title === state.viewProduct) {
-                    productToShow = product
-                }
-            })
-
-            console.log(`Encontro: ${productToShow}`)
-            console.log(productToShow)
-
             const cardContainer = document.createElement("div");
             cardContainer.setAttribute("class", "card-container");
             this.shadowRoot.appendChild(cardContainer);
@@ -44,13 +23,12 @@ export class ProductDetailCard extends HTMLElement {
             // Div para la imagen
             const imageContainer = document.createElement("div");
             imageContainer.setAttribute("class", "image-container");
-            imageContainer.style.backgroundImage = `url(${productToShow.img})`
             cardContainer.appendChild(imageContainer);
 
-            // const image = document.createElement("img");
-            // image.setAttribute("src", `${productToShow.img}`);
-            // image.setAttribute("alt", "Product Image");
-            // imageContainer.appendChild(image);
+            const image = document.createElement("img");
+            image.setAttribute("src", "/src/resources/jpg/image 16.png");
+            image.setAttribute("alt", "Product Image");
+            imageContainer.appendChild(image);
 
             // Div para el contenido
             const contentContainer = document.createElement("div");
@@ -58,12 +36,14 @@ export class ProductDetailCard extends HTMLElement {
             cardContainer.appendChild(contentContainer);
 
             const title = document.createElement("h1");
-            title.textContent = productToShow.title;
+            title.textContent = "Cookie dough chocolate chips corona 250g";
             contentContainer.appendChild(title);
 
             const price = document.createElement("h2");
-            price.textContent = productToShow.price;
+            price.textContent = "COP $23,500";
             contentContainer.appendChild(price);
+
+
 
             const ratingContainer = document.createElement("div");
             ratingContainer.setAttribute("class", "rating-container");
@@ -82,21 +62,27 @@ export class ProductDetailCard extends HTMLElement {
             rating.textContent = "4.0";
             ratingContainer.appendChild(rating);
 
+
             const descriptionTitle = document.createElement("h3");
             descriptionTitle.textContent = "Description";
             contentContainer.appendChild(descriptionTitle);
 
+
             const description = document.createElement("p");
-            description.textContent = productToShow.description;
+            description.textContent = "Prepare delicious desserts, cookies, milkshakes or make decorations with our Corona chocolate chips. They are delicious and very easy to use.";
             contentContainer.appendChild(description);
+
 
             const purchaseButton = document.createElement("button");
             purchaseButton.textContent = "Purchase now";
             contentContainer.appendChild(purchaseButton);
 
+
             const addToCartButton = document.createElement("button");
             addToCartButton.textContent = "Add to cart";
             contentContainer.appendChild(addToCartButton);
+
+
         }
     }
 }

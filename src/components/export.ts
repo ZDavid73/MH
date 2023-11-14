@@ -58,3 +58,9 @@ export {ProductDetailComments} from './productdetailcomp/productdetailcomment/pr
 export { ShopingList } from '../pages/shopingList/shopingList'
 export { ShopingListCard } from './shoopingPage/shopingListCard/shopingListCard'
 export { PurchaseSummary } from './shoopingPage/purchaseSummary/purchaseSummary'
+
+//Purchase
+export { PurchasePage } from '../pages/purchase/purchasePage'
+export {PurchasePageSummary} from './purchasePage/purchasePage'
+export { paymentPurchaseSummary } from './purchasePage/payment/payment'
+export {SelectPaymentMethod}from './purchasePage/selectpaymentmethod/selectpaymentmethod'

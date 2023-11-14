@@ -1,6 +1,3 @@
-import { dispatch } from "../../store";
-import { changeScreen } from "../../store/actions";
-import { Screens } from "../../types/screens";
 import "../export";
 
 export class loginregister extends HTMLElement {
@@ -39,12 +36,12 @@ export class loginregister extends HTMLElement {
 
             const emailInput = this.ownerDocument.createElement('signup-input');
             emailInput.setAttribute('placeholder', 'Email');
-            emailInput.setAttribute('icon', '/src/resources/svg/Icons/Email.svg');
+            emailInput.setAttribute('icon', '/src/resources/jpg/mail_FILL1_wght400_GRAD0_opsz48 1.png');
             centralBox.appendChild(emailInput);
 
             const passwordInput = this.ownerDocument.createElement('signup-input');
             passwordInput.setAttribute('placeholder', 'Password');
-            passwordInput.setAttribute('icon', '/src/resources/svg/Icons/Lock.svg');
+            passwordInput.setAttribute('icon', '/src/resources/jpg/lock_FILL1_wght400_GRAD0_opsz48 1.png');
             centralBox.appendChild(passwordInput);
 
 
@@ -64,11 +61,7 @@ export class loginregister extends HTMLElement {
             signUpLink.setAttribute("href", "#");
             mainContainer.appendChild(signUpLink);
 
-            loginButton.addEventListener("click", () => {
-                dispatch(
-                    changeScreen(Screens.mainPage)
-                )
-            })
+            
         }
     }
 }

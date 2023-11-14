@@ -48,13 +48,7 @@ export class NavBarLanding extends HTMLElement {
 
             buttonSignUp.addEventListener("click", () => {
                 dispatch(
-                    changeScreen(Screens.signUp)
-                )
-            })
-
-            buttonLogin.addEventListener("click", () => {
-                dispatch(
-                    changeScreen(Screens.logIn)
+                    changeScreen("mainPage")
                 )
             })
 

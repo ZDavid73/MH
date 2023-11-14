@@ -56,22 +56,4 @@
         font-weight: 600;
         line-height: normal;
         margin: 0;
-    }
-
-    #summaryContainer button {
-        width: 90%;
-        background-color: #F7F4F3;
-        outline: none;
-        border: none;
-        margin: 10px 0 20px 0;
-        border-radius: 5px;
-
-        color: var(--Primary-1, #F24333);
-        text-align: center;
-        font-family: REM;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-    }
-}
+    }}

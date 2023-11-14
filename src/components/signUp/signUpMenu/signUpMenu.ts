@@ -1,6 +1,3 @@
-import { dispatch } from "../../../store"
-import { changeScreen } from "../../../store/actions"
-import { Screens } from "../../../types/screens"
 import "../../export"
 
 export class SignUpMenu extends HTMLElement {
@@ -65,12 +62,6 @@ export class SignUpMenu extends HTMLElement {
             const createAccountButton = this.ownerDocument.createElement("button")
             createAccountButton.innerHTML = "CREATE ACCOUNT"
             menuContainer.appendChild(createAccountButton)
-
-            createAccountButton.addEventListener("click", () => {
-                dispatch(
-                    changeScreen(Screens.mainPage)
-                )
-            })
 
         }
     }

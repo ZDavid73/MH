@@ -1,6 +1,3 @@
-import { dispatch } from "../../../../store";
-import { changeScreen, changeViewProduct } from "../../../../store/actions";
-import { Screens } from "../../../../types/screens";
 import "../../../export";
 
 const enum recommendedSectionCardProperties {
@@ -91,15 +88,6 @@ export class recommendedSectionCard extends HTMLElement {
         const descriptionText = this.ownerDocument.createElement("p")
         descriptionText.innerHTML = `${this.properties.description}`
         textContainer.appendChild(descriptionText)
-
-        cardContainer.addEventListener("click", () => {
-            dispatch(
-                changeViewProduct(this.properties.title)
-            )
-            dispatch(
-                changeScreen(Screens.productDetail)
-            )
-        })
     }
 }
 

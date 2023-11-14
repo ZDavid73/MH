@@ -1,5 +1,5 @@
 import { dispatch } from "../../../store";
-import { changeScreen, changeSeaarchText } from "../../../store/actions";
+import { changeScreen } from "../../../store/actions";
 import { Screens } from "../../../types/screens";
 import "../../export";
 
@@ -54,7 +54,6 @@ export class NavBarRed extends HTMLElement {
             const menuButton = this.ownerDocument.createElement("img")
             menuButton.classList.add("navIcon")
             menuButton.setAttribute("src", "/src/resources/svg/navIcons/light/menuLight.svg")
-            menuButton.setAttribute("screen", Screens.landingPage)
             navContainer.appendChild(menuButton)
 
             const rightSpace = this.ownerDocument.createElement("div")
@@ -63,12 +62,10 @@ export class NavBarRed extends HTMLElement {
 
             logo.addEventListener("click", () => {
                 dispatch(
-                    changeSeaarchText("")
-                )
-                dispatch(
                     changeScreen(Screens.mainPage)
                 )
             })
+
         }
     }
 }
